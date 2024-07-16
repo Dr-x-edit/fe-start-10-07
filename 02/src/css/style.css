@@ -122,3 +122,11 @@ img {
   width: 15px;
   height: 15px;
 }
+
+hr {
+  border: none;
+  border-top: 1px solid #999999;
+  width: 1024px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
