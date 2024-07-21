@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Журнал бджоляра</title>
+    <meta
+      name="description"
+      content="Найкращий електронно-обліковий журнал для бджолярів"
+    />
+    <!-- CDN-лінк на іконки bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Підключення Reset та normalize для +- однакового відображення форми на різних браузерах -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Загальний контейнер для кращого відображення -->
+    <div class="outer-container">
+      <!-- Хедер: лого, навбар, інфо по користувачу -->
+      <header class="header">
+        <!-- Логотип -->
+        <div class="header__box-logo">
+          <i class="bi bi-journal-text"></i>
+          <h1 class="header__title">Електронний журнал</h1>
+        </div>
+        <!-- Навігаційне иеню -->
+        <nav class="navigation-menu header__navigation-menu">
+          <ul class="navigation-menu__list">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Журнал</a></li>
+            <li><a href="#">Звіти</a></li>
+          </ul>
+        </nav>
+        <!-- Інформація про користувача та кнопка виходу -->
+        <div class="box-loguot header__box-loguot">
+          <p class="box-loguot__text">Вітаю: <strong>Admin</strong></p>
+          <a href="#" class="box-loguot__btn"
+            ><span>Вихід</span> <i class="bi bi-arrow-right-square"></i
+          ></a>
+        </div>
+      </header>
+      <hr />
+      <main>
+        <!-- Секція для форми -->
+        <section>
+          <!-- Оголошення форми, краще з методом post-->
+          <form action="" class="inspect-form">
+            <hr class="form_hr" />
+            <!-- Назва форми та можливіть перейти до існуючих записів -->
+            <div class="title-box inspect-form__title-box">
+              <div class="title-box__title">
+                <h2><i class="bi bi-file-earmark-plus-fill"></i>Новий огляд</h2>
+              </div>
+              <div class="title-box__button">
+                <a href="../index.html"
+                  ><i class="bi bi-arrow-left-square-fill"></i>До записів</a
+                >
+              </div>
+            </div>
+            <hr class="form_hr" />
+            <!-- Головні данні по огляду: Номер оглянутого вулику та дата інспекції -->
+            <div class="main-data-box inspect-form__main-data-box">
+              <!-- Номер вулику -->
+              <div class="main-data-box__wrapper">
+                <div class="main-data-box__input">
+                  <div><i class="bi bi-box-seam"></i></div>
+                  <div><label for="hivenubmer">Номер вулику:</label></div>
+                  <div>
+                    <input
+                      type="number"
+                      id="hivenubmer"
+                      name="hivenubmer"
+                      min="1"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Дата інспекції -->
+              <div class="main-data-box__wrapper">
+                <div class="main-data-box__input">
+                  <div><i class="bi bi-calendar2-check"></i></div>
+                  <div>
+                    <label for="inspectdate">Дата огляду:</label>
+                  </div>
+                  <div>
+                    <input
+                      type="date"
+                      id="inspectdate"
+                      name="inspectdate"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="form_hr" />
+            <!-- Секція форми про сім'ю -->
+            <div class="family-info-box inspect-form__family-info-box">
+              <!-- Підсекція: Детальна інформація про сім'ю -->
+              <div class="famili-details family-info-box__famili-details">
+                <!-- Підпис секції -->
+                <div class="signature-section"><p>Сім'я деталі</p></div>
+                <!-- Інпути для запису детальної інформації про сім'ю -->
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="queen">Матка:</label></div>
+                    <div>
+                      <select name="queen" id="queen" required>
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="queenbread">Маточник:</label></div>
+                    <div>
+                      <select name="queenbread" id="queenbread" required>
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="egg">Яйця:</label></div>
+                    <div>
+                      <select name="egg" id="egg" required>
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="openbrood">Відкритий розплід:</label></div>
+                    <div>
+                      <select name="openbrood" id="openbrood" required>
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div>
+                      <label for="closedbrood">Закритий розплід:</label>
+                    </div>
+                    <div>
+                      <select name="closedbrood" id="closedbrood" required>
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="dronebrood">Трутовий розплід:</label></div>
+                    <div>
+                      <select name="dronebrood" id="dronebrood" required>
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div>
+                      <label for="variegatedbrood">Строкатий розплід:</label>
+                    </div>
+                    <div>
+                      <select
+                        name="variegatedbrood"
+                        id="variegatedbrood"
+                        required
+                      >
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="diseases">Хвороби:</label></div>
+                    <div>
+                      <select name="diseases" id="diseases" required>
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="honeyspray">Медовий наприск:</label></div>
+                    <div>
+                      <select name="honeyspray" id="honeyspray" required>
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="closedhoney">Печатний мед:</label></div>
+                    <div>
+                      <select name="closedhoney" id="closedhoney" required>
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="parchment">Перга:</label></div>
+                    <div>
+                      <select name="parchment" id="parchment" required>
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Підсекція: Загальна характеристика сім'ї -->
+              <div class="famili-general family-info-box__famili-general">
+                <!-- Підпис секції -->
+                <div class="signature-section"><p>Сім'я загальне</p></div>
+                <!-- Інпути для записів -->
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div class="column__items_column">
+                      <div><label for="statusfamily">Стан родини:</label></div>
+                      <div>
+                        <select name="statusfamily" id="statusfamily" required>
+                          <option value="7">Абсолютно спокійні</option>
+                          <option value="6">Дуже спокійні</option>
+                          <option value="5">Спокійні</option>
+                          <option value="4">Трохи напружені</option>
+                          <option value="3">Напружені</option>
+                          <option value="2">Агресивні</option>
+                          <option value="1">Дуже агресивні</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div class="column__items_column">
+                      <div>
+                        <label for="familystrength">Сила родини:</label>
+                      </div>
+                      <div>
+                        <select
+                          name="familystrength"
+                          id="familystrength"
+                          required
+                        >
+                          <option value="7">Сильні</option>
+                          <option value="6">Дуже міцні</option>
+                          <option value="5">Міцні</option>
+                          <option value="4">Середньої сили</option>
+                          <option value="3">Трохи слабкі</option>
+                          <option value="2">Слабкі</option>
+                          <option value="1">Дуже слабкі</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div class="column__items_column">
+                      <div>
+                        <label for="familyfood"
+                          >Забезпечення родини кормом:
+                        </label>
+                      </div>
+                      <div>
+                        <select name="familyfood" id="familyfood" required>
+                          <option value="7">Достатньо забезпечені</option>
+                          <option value="6">Добре забезпечені</option>
+                          <option value="5">Задовільно забезпечені</option>
+                          <option value="4">Помірно забезпечені</option>
+                          <option value="3">Мало забезпечені</option>
+                          <option value="2">Слабо забезпечені</option>
+                          <option value="1">Дуже слабо забезпечені</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right" hidden></i></div>
+                    <div><label for="" hidden></label></div>
+                    <div><select name="" id="" hidden></select></div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right" hidden></i></div>
+                    <div><label for="" hidden></label></div>
+                    <div><select name="" id="" hidden></select></div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right" hidden></i></div>
+                    <div><label for="" hidden></label></div>
+                    <div><select name="" id="" hidden></select></div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right" hidden></i></div>
+                    <div><label for="" hidden></label></div>
+                    <div><select name="" id="" hidden></select></div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right" hidden></i></div>
+                    <div><label for="" hidden></label></div>
+                    <div><select name="" id="" hidden></select></div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right" hidden></i></div>
+                    <div><label for="" hidden></label></div>
+                    <div><select name="" id="" hidden></select></div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right" hidden></i></div>
+                    <div><label for="" hidden></label></div>
+                    <div><select name="" id="" hidden></select></div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right" hidden></i></div>
+                    <div><label for="" hidden></label></div>
+                    <div><select name="" id="" hidden></select></div>
+                  </div>
+                </div> -->
+              </div>
+              <!-- Підсекція: Інформація про бджолину матку -->
+              <div class="bee-queen family-info-box__bee-queen">
+                <!-- Підпис секції -->
+                <div class="signature-section"><p>Матка</p></div>
+                <!-- Інпути для внесення записів -->
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="beequeen">Мічена матка:</label></div>
+                    <div>
+                      <select name="beequeen" id="beequeen" required>
+                        <option value="1">🟢</option>
+                        <option value="0">🔴</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div class="column__items_column">
+                      <div>
+                        <label for="birthyear">Дата виведення: </label>
+                      </div>
+                      <div>
+                        <input
+                          type="date"
+                          id="birthyear"
+                          name="birthyear"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="beequeentype">Вид матки:</label></div>
+                    <div>
+                      <select name="beequeentype" id="beequeentype" required>
+                        <option value="swarming">Ройовий</option>
+                        <option value="fistulous">Свищевий</option>
+                        <option value="quietreplacement">Тиха заміна</option>
+                        <option value="artificial">Штучний</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div><label for="beequeenbreed">Порода матки:</label></div>
+                    <div>
+                      <select name="beequeenbreed" id="beequeenbreed" required>
+                        <option value="carpathia">Карпатка</option>
+                        <option value="ukrainiansteppe">
+                          Українська степова
+                        </option>
+                        <option value="italian">Італійка</option>
+                        <option value="buckfast">Бакфаст</option>
+                        <option value="carnic">Карніка</option>
+                        <option value="caucasian">Кавказька</option>
+                        <option value="balkan">Балканська</option>
+                        <option value="russian">Руська</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div class="column__items_column">
+                      <div>
+                        <label for="beequeencode">Шифр матки*: </label>
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          id="beequeencode"
+                          name="beequeencode"
+                          pattern="[0-9]+_[РСТШ]{1}/[0-9]{6}_[0-9]+"
+                          placeholder="10_Ш/052021_3"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div class="column__items_column">
+                      <div>
+                        <label for="beequeenmother">Материнська матка: </label>
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          id="beequeenmother"
+                          name="beequeenmother"
+                          pattern="[0-9]+_[РСТШ]{1}/[0-9]{6}_[0-9]+"
+                          placeholder="3_Ш/052020_7"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Зноска для інформації як вірно заповнити поле -->
+                <small
+                  >* - 10_Ш/052021_3 – матка 10 вулика_виведена штучно/дата
+                  виводу_матка від якої виводили з 3-го вулика. <br />
+                  Відповідність літер:
+                  <br /><br />
+                  Р - Ройова<br />
+                  С - Свищева<br />
+                  Т - Тиха заміна<br />
+                  Ш - Штучна
+                </small>
+              </div>
+            </div>
+            <hr class="form_hr" />
+            <!-- Секція форми про вулик -->
+            <div class="hive-info-box inspect-form__hive-info-box">
+              <!-- Власе підсекція для внесення інформації про вулик -->
+              <div class="hive-info-box__hive">
+                <!-- Назва підсекції -->
+                <div class="signature-section"><p>Вулик</p></div>
+                <!-- Інпути для внесення записів -->
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div>
+                      <label for="numbercases">Кількість корпусів:</label>
+                    </div>
+                    <div>
+                      <input
+                        type="number"
+                        id="numbercases"
+                        name="numbercases"
+                        min="0"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div>
+                      <label for="numberframes">Кількість рамок:</label>
+                    </div>
+                    <div>
+                      <input
+                        type="number"
+                        id="numberframes"
+                        name="numberframes"
+                        min="0"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div>
+                      <label for="numberhoneyframes"
+                        >Кількість рамок з медом:</label
+                      >
+                    </div>
+                    <div>
+                      <input
+                        type="number"
+                        id="numberhoneyframes"
+                        name="numberhoneyframes"
+                        min="0"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div>
+                      <label for="numberbroodframes"
+                        >Кількість рамок з розплодом:</label
+                      >
+                    </div>
+                    <div>
+                      <input
+                        type="number"
+                        id="numberbroodframes"
+                        name="numberbroodframes"
+                        min="0"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div>
+                      <label for="numberparchmentframes"
+                        >Кількість рамок з пергою:</label
+                      >
+                    </div>
+                    <div>
+                      <input
+                        type="number"
+                        id="numberparchmentframes"
+                        name="numberparchmentframes"
+                        min="0"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div>
+                      <label for="numberwaxframes"
+                        >Кількість рамок з вощиною:</label
+                      >
+                    </div>
+                    <div>
+                      <input
+                        type="number"
+                        id="numberwaxframes"
+                        name="numberwaxframes"
+                        min="0"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Підсекція для внесення даних про медозбір з вулика -->
+              <div class="hive-info-box__honey-harvest">
+                <!-- Назва підсекціх -->
+                <div class="signature-section"><p>Медозбір</p></div>
+                <!-- Інпут для внесення інформації -->
+                <div class="row__wrapper">
+                  <div class="row__items">
+                    <div><i class="bi bi-caret-right"></i></div>
+                    <div>
+                      <label for="numberpumpedframes">Відкачано рамок: </label>
+                    </div>
+                    <div>
+                      <input
+                        type="number"
+                        id="numberpumpedframes"
+                        name="numberpumpedframes"
+                        min="0"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="form_hr" />
+            <!-- Секція для внесення власних, додаткових коментарів -->
+            <div class="notes-box inspect-form__notes-box">
+              <div class="notes-box__commetns">
+                <!-- Назва секції -->
+                <div class="signature-section"><p>Нотатки</p></div>
+                <!-- Інпут -->
+                <div class="column__wrapper">
+                  <div class="column__items">
+                    <div class="column__items_column">
+                      <div class="notes-box__label">
+                        <i class="bi bi-card-text"></i>
+                        <label for="coments">Коментарі:</label>
+                      </div>
+                      <div>
+                        <textarea
+                          name="coments"
+                          id="coments"
+                          rows="10"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="form_hr" />
+            <!-- Власне кнопки для керування: Надсилання форми та повернення до записів -->
+            <div class="buttons-box inspect-form__buttons-box">
+              <div class="buttons-box__form-buttons">
+                <!-- Кнопка повернення до записів -->
+                <div class="buttons-box__button">
+                  <a href="../index.html"
+                    ><i class="bi bi-arrow-left-square-fill"></i>До записів</a
+                  >
+                </div>
+                <!-- Кнопка надсилання форми -->
+                <div>
+                  <button type="submit" class="image-button">
+                    <i class="bi bi-pen"></i>
+                    Записати
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+      <hr />
+      <!-- Футер для контакної інформації -->
+      <footer>
+        <div class="contacts">
+          <h5 class="contacts__title">Звязатися з нами</h5>
+          <div class="box-links contacts__box-links">
+            <div class="box-links__mail">
+              <a href="mailto:test@gmail.com" class="mail">
+                <span><i class="bi bi-envelope-arrow-up-fill"></i></span
+                >Написати</a
+              >
+            </div>
+            <div class="box-links__phone">
+              <a href="tel:+3801231234">
+                <span> <i class="bi bi-telephone-forward-fill"></i></span
+                >Зателефонувати</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

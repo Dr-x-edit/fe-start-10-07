@@ -1,0 +1,561 @@
+/* увесь інший css */
+@font-face {
+  font-family: "Roboto!";
+  src: local("Roboto");
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Philosopher!";
+  src: local("Philosopher");
+  src: url(../fonts/Philosopher-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+hr {
+  margin: 0;
+}
+
+html {
+  font-family: "Roboto!";
+  font-weight: 400;
+}
+
+body {
+  padding: 20px 100px 20px 100px;
+}
+.outer-container {
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  padding: 0 50px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 0 0;
+  margin-bottom: 20px;
+}
+
+.header__box-logo {
+  display: flex;
+  margin-right: auto;
+  margin-right: 20px;
+}
+
+.header__box-logo .bi {
+  margin-right: 10px;
+}
+
+.header__title {
+  font-family: "Philosopher!";
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.header__navigation-menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  border-left: 2px solid #d1d5db;
+  padding: 2px 0 0 10px;
+}
+
+.navigation-menu__list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.navigation-menu__list li {
+  display: inline;
+  margin: 0 50px 0 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #d1d5db;
+}
+
+span {
+  margin-right: 10px;
+}
+
+.navigation-menu__list li:last-child {
+  margin-right: 0;
+}
+
+.box-loguot {
+  display: flex;
+  align-items: center;
+  padding: 2px 0 0 0;
+}
+.box-loguot__text {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.box-loguot__btn {
+  background-color: #e9edf4;
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+
+.box-loguot__btn:hover {
+  background-color: #eab308;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #999999;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.section-contact-form,
+.wrapper-form__personal-info,
+.wrapper-form__contact-info,
+.inspect-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-form,
+.wrapper-form__buttons,
+.buttons__submit-button,
+.buttons__reset-button {
+  display: flex;
+}
+.section-contact-form {
+  justify-content: top;
+  align-items: center;
+  padding: 20px 0 0 0;
+}
+.section-contact-form__title {
+  font-family: "Philosopher!";
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.wrapper-form {
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.wrapper-form__personal-info {
+  margin-right: 20px;
+}
+
+.contact-form {
+  padding: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background: rgb(234, 179, 8);
+  background: linear-gradient(
+    360deg,
+    rgba(234, 178, 8, 0.596) 0%,
+    rgba(255, 203, 47, 0.575) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  box-shadow: 13px -9px 14px -14px rgba(112, 112, 112, 0.75);
+}
+
+.contact-form label {
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #374151;
+  background-color: #f9fafb;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #eab308;
+  background-color: #ffffff;
+}
+
+.contact-form input {
+  margin-bottom: 10px;
+}
+.wrapper-form__buttons {
+  justify-content: space-between;
+}
+
+.buttons__submit-button,
+.buttons__reset-button {
+  flex: 1;
+}
+
+.buttons__submit-button {
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.buttons__reset-button {
+  justify-content: flex-start;
+}
+
+.wrapper-form__buttons input {
+  margin-bottom: 0;
+}
+
+.wrapper-form__buttons input[type="submit"],
+.wrapper-form__buttons input[type="reset"]:hover {
+  background-color: #eab308;
+}
+
+.wrapper-form__buttons input[type="reset"],
+.wrapper-form__buttons input[type="submit"]:hover {
+  background-color: #d1d5db;
+}
+
+.demo-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.demo-link {
+  font-family: "Philosopher!";
+  font-size: 16px;
+  background-color: #eab308;
+  border-radius: 6px;
+  padding: 16px 16px;
+}
+
+footer,
+.contacts h5 {
+  margin-bottom: 20px;
+}
+
+.contacts {
+  display: flex-grow;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.contacts h5 {
+  text-align: center;
+}
+
+.contacts__box-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts__box-links div {
+  flex: 1;
+}
+
+.box-links__mail {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.inspect-form {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
+.section-inspect-form {
+  width: auto;
+  height: auto;
+  background-color: #999999;
+}
+
+.form_hr {
+  margin-bottom: 10px;
+}
+
+.title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+  margin-bottom: 10px;
+}
+.title-box__title {
+  display: flex;
+  align-items: center;
+}
+
+.title-box__title h2 {
+  font-family: "Philosopher!";
+  font-size: 22px;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.title-box__title i,
+.title-box__button i {
+  margin-right: 10px;
+}
+
+.title-box__button a {
+  font-size: 16px;
+  background-color: #eab308;
+  border-radius: 6px;
+  padding: 12px 12px;
+}
+
+.main-data-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.family-info-box,
+.hive-info-box,
+.notes-box,
+.buttons-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+.buttons-box {
+  margin-bottom: 0;
+}
+
+.notes-box {
+  padding: 0 250px;
+}
+
+.family-info-box .row__wrapper,
+.family-info-box .column__wrapper,
+.hive-info-box .row__wrapper,
+.hive-info-box .column__wrapper {
+  margin-bottom: 2px;
+}
+
+.family-info-box .row__wrapper:last-child,
+.family-info-box .column__wrapper:last-child,
+.hive-info-box .row__wrapper:last-child,
+.hive-info-box .column__wrapper:last-child {
+  margin-bottom: 0;
+}
+.signature-section {
+  position: relative;
+  top: -10px;
+  left: -10px;
+  text-align: center;
+  width: auto;
+  padding: 5px;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 6px 0 6px 0;
+  background-color: #eab308;
+  margin-bottom: 2px;
+}
+.bee-queen .signature-section,
+.famili-general .signature-section {
+  align-self: flex-start;
+}
+.signature-section p {
+  font-family: "Philosopher!";
+  color: #ffffff;
+}
+.famili-details,
+.famili-general,
+.bee-queen,
+.hive-info-box__hive,
+.hive-info-box__honey-harvest,
+.notes-box__commetns {
+  flex: 1;
+  border-radius: 6px;
+  padding: 10px 10px;
+  border: 1px solid #e9edf4;
+}
+.buttons-box__form-buttons {
+  flex: 1;
+  border-radius: 6px;
+  padding: 0px 10px;
+}
+.famili-general,
+.bee-queen {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-box__form-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bee-queen .column__wrapper:nth-last-child(2) {
+  margin-bottom: 10px;
+}
+
+.main-data-box__wrapper,
+.row__wrapper,
+.column__wrapper {
+  border-radius: 6px;
+  padding: 2px 2px;
+  border: 1px solid #e9edf4;
+}
+
+.main-data-box__wrapper i,
+.row__wrapper i,
+.column__wrapper i {
+  color: #eab308;
+  font-size: 22px;
+}
+
+.main-data-box__input,
+.main-data-box__input div,
+.row__items,
+.row__items div,
+.column__items,
+.column__items > div {
+  display: flex;
+  align-items: center;
+}
+
+.main-data-box__input div,
+.row__items div,
+.column__items div {
+  margin-right: 10px;
+}
+.column__items_column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.column__items_column div {
+  margin-right: 0;
+  width: 100%;
+}
+
+.column__items_column div:first-child {
+  margin-bottom: 2px;
+}
+
+.column__items_column input,
+.column__items_column textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.column__items_column textarea {
+  border-radius: 6px;
+}
+
+.main-data-box__input div:last-child,
+.row__items div:last-child {
+  margin-right: 0;
+  flex-grow: 1;
+}
+
+.column__items div:last-child {
+  margin-right: 0;
+}
+
+.row__items select,
+.column__items select,
+.row__items input {
+  width: 100%;
+}
+
+.main-data-box__input,
+.row__items,
+.column__items {
+  border-radius: 6px;
+  padding: 2px 2px;
+  background-color: #e9edf4;
+}
+
+.main-data-box__input input,
+.row__items input {
+  text-align: right;
+}
+
+.notes-box__commetns .column__wrapper {
+  border: none;
+}
+
+.notes-box__commetns .column__items_column {
+  padding: 10px 10px;
+}
+.notes-box__label {
+  display: flex;
+  align-items: center;
+}
+.notes-box__commetns .column__items_column i {
+  margin-right: 10px;
+}
+
+.buttons-box__button i {
+  margin-right: 10px;
+}
+
+.buttons-box__button a {
+  font-size: 16px;
+  background-color: #eab308;
+  border-radius: 6px;
+  padding: 12px 12px;
+}
+.buttons-box__button {
+  margin-bottom: 0;
+}
+.image-button {
+  border: none;
+  font-size: 16px;
+  background-color: #eab308;
+  border-radius: 6px;
+  padding: 12px 12px;
+}
+
+.image-button:hover {
+  color: #d1d5db;
+}
+/* css для bootstrap-icons */
+.bi-journal-text,
+.bi-envelope-arrow-up-fill,
+.bi-telephone-forward-fill,
+.bi-file-earmark-plus-fill {
+  color: #eab308;
+  font-size: 24px;
+}
