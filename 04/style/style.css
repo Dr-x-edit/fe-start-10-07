@@ -1,0 +1,156 @@
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-semi-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7b3b3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+.screen-wrapper {
+  margin: 50px auto 50px auto;
+  width: 360px;
+  height: 800px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 61px 20px 91px 24px;
+}
+
+.box-logo {
+  display: flex;
+  margin-bottom: 23px;
+}
+
+header {
+  margin-bottom: 29px;
+}
+
+header input {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgb(239, 239, 239);
+  font-size: 12px;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 17px;
+}
+
+.menu__main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.wrapper-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.wrapper-item:hover .wrapper-item__title {
+  color: black;
+}
+
+.wrapper-item:hover .wrapper-item__boxlogo {
+  background: #eae2b7;
+}
+
+.wrapper-item__boxlogo {
+  padding: 18px;
+  width: 74px;
+  height: 74px;
+  border-radius: 12px;
+  background: rgb(239, 239, 239);
+  margin-bottom: 8px;
+}
+
+.wrapper-item__title {
+  color: #c4c4c4;
+  font-size: 16px;
+}
+
+.menu__sub-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__sub-menu .sub-menu__wrapper {
+  margin-bottom: 8px;
+}
+
+.menu__sub-menu .sub-menu__wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.sub-menu__title {
+  font-size: 20px;
+  margin-bottom: 26px;
+}
+
+.sub-menu__wrapper {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 4px 0px rgb(230, 230, 230);
+  background: rgb(255, 255, 255);
+}
+
+.sub-menu__logo {
+  margin-right: 12px;
+}
+.sub-menu__text-box {
+  width: 100%;
+}
+
+.text-box__title {
+  font-size: 16px;
+  color: #003049;
+  margin-bottom: 8px;
+}
+.text-box__description {
+  font-size: 14px;
+  color: #d62828;
+}

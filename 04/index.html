@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger house</title>
+    <meta name="description" content="The best bugers in your town" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style/reset.css" /> -->
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="screen-wrapper">
+      <header>
+        <div class="box-logo">
+          <img src="icons/menu-btn.svg" alt="Menu" />
+        </div>
+        <h1 class="title inter-semi-bold">Menu</h1>
+        <input
+          class="inter-regular"
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Search food here"
+        />
+      </header>
+      <main class="menu">
+        <section class="menu__main-menu">
+          <div class="wrapper-item">
+            <div class="wrapper-item__boxlogo">
+              <img src="icons/food.svg" alt="Food" />
+            </div>
+            <h4 class="wrapper-item__title inter-medium">Food</h4>
+          </div>
+          <div class="wrapper-item">
+            <div class="wrapper-item__boxlogo">
+              <img src="icons/drinks.svg" alt="Drinks" />
+            </div>
+            <h4 class="wrapper-item__title inter-medium">Drinks</h4>
+          </div>
+          <div class="wrapper-item">
+            <div class="wrapper-item__boxlogo">
+              <img src="icons/dessert.svg" alt="Dessert" />
+            </div>
+            <h4 class="wrapper-item__title inter-medium">Dessert</h4>
+          </div>
+        </section>
+        <section class="menu__sub-menu">
+          <h2 class="sub-menu__title inter-medium">Burger</h2>
+          <div class="sub-menu__wrapper">
+            <div class="sub-menu__logo">
+              <img src="img/big-mac.svg" alt="big-mac" />
+            </div>
+            <div class="sub-menu__text-box">
+              <h4 class="text-box__title inter-regular">Big Mac</h4>
+              <h4 class="text-box__description inter-medium">Rs 240</h4>
+            </div>
+          </div>
+          <div class="sub-menu__wrapper">
+            <div class="sub-menu__logo">
+              <img src="img/kfc-double.svg" alt="kfc-double" />
+            </div>
+            <div class="sub-menu__text-box">
+              <h4 class="text-box__title inter-regular">KFC Double</h4>
+              <h4 class="text-box__description inter-medium">Rs 252</h4>
+            </div>
+          </div>
+          <div class="sub-menu__wrapper">
+            <div class="sub-menu__logo">
+              <img src="img/fish-burger.svg" alt="fish-burger" />
+            </div>
+            <div class="sub-menu__text-box">
+              <h4 class="text-box__title inter-regular">Fish Burger</h4>
+              <h4 class="text-box__description inter-medium">Rs 220</h4>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
