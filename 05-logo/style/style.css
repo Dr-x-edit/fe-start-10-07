@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  padding: 100px 0;
+  margin: 0 auto;
+  width: 1368px;
+  height: 1523px;
+}
+
+.wrapper-logo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapper-logo__dia-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 512px;
+  height: 512px;
+  background-color: black;
+  gap: 32.48px;
+  padding: 128.64px 0 0 0;
+}
+
+/* Варіант через div */
+
+.dia-logo__flag_blue,
+.dia-logo__flag_yellow {
+  width: 80px;
+  height: 30px;
+}
+
+.dia-logo__flag_blue {
+  background-color: #2137fc;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.dia-logo__flag_yellow {
+  background-color: #ffd84b;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* Варіант через спосіб відображення
+трикутників + не використання 2-х div-контейнерів */
+
+/* .dia-logo__flag {
+  width: 80px;
+  height: 0px;
+  border-style: solid;
+  border-width: 30px 0;
+  border-color: #2137fc transparent #ffd84b transparent;
+  border-radius: 6px;
+} */
+
+/* Варіант з before та after 
+АЛЕ ПРИ ЗБІЛЬШЕННІ З'ЯВЛЯЄТЬСЯ ЧОРНА ПОЛОСЯ МІЖ НИМИ */
+
+/* .dia-logo__flag {
+  display: flex;
+  flex-direction: row;
+}
+.dia-logo__flag::before,
+.dia-logo__flag::after {
+  content: "";
+  display: flex;
+  width: 40px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #2137fc 50%, #ffd84b 50%);
+  border: none;
+}
+.dia-logo__flag::before {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.dia-logo__flag::after {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+} */
+
+.second-logo {
+  position: absolute;
+  top: 395px;
+  left: 441px;
+  display: flex;
+  justify-content: center;
+  width: 512px;
+  height: 512px;
+  background-color: #ffd84b;
+  z-index: 2;
+}
+
+.rectangle_blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 512px;
+  height: 256px;
+  background-color: #2137fc;
+}
+
+.triangle__first_yellow,
+.triangle__second_yellow {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-color: transparent transparent #ffd84b transparent;
+}
+
+.triangle__first_yellow {
+  left: 206px;
+  bottom: -1px;
+  border-width: 0 2px 37px 20px;
+}
+
+.triangle__second_yellow {
+  left: 294px;
+  bottom: -1px;
+  border-width: 0 1px 20px 15px;
+}
+
+.triangle__third_blue,
+.triangle__fourth_blue,
+.triangle__fifth_blue {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-color: transparent transparent #2137fc transparent;
+  transform: rotate(180deg);
+}
+
+.triangle__third_blue {
+  left: 166px;
+  bottom: -8px;
+  border-width: 0px 2px 9px 7px;
+}
+
+.triangle__fourth_blue {
+  left: 249px;
+  bottom: -13px;
+  border-width: 0 1px 14px 13px;
+}
+
+.triangle__fifth_blue {
+  left: 331px;
+  bottom: -13px;
+  border-width: 0px 1px 14px 24px;
+}
+
+.second-logo img,
+.third-logo img {
+  position: absolute;
+  z-index: 4;
+}
+
+.second-logo img {
+  width: 400px;
+  height: 227.36px;
+  top: 142px;
+}
+
+.third-logo img {
+  width: 358.44px;
+  height: 203.74px;
+  top: 268px;
+  left: 89px;
+  z-index: 4;
+}
+
+.third-logo {
+  position: absolute;
+  top: 811px;
+  left: 856px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 512px;
+  height: 512px;
+  background-color: #ffffff;
+  padding: 34px;
+  border-bottom: 2px solid rgb(33, 55, 252);
+  border-top: 2px solid rgb(33, 55, 252);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 0;
+}
+
+.third-logo__rectangle_blue,
+.third-logo__rectangle_yellow {
+  position: relative;
+  width: 444px;
+  height: 222.5px;
+}
+.third-logo__rectangle_blue {
+  background-color: #2137fc;
+  border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+}
+
+.third-logo__rectangle_yellow {
+  background-color: #ffd84b;
+  border-radius: 0% 0% 50% 50% / 0% 0% 100% 100%;
+}
+
+.third-logo__triangle-first_yellow,
+.third-logo__triangle-second_yellow {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-color: transparent transparent #ffd84b transparent;
+}
+
+.third-logo__triangle-first_yellow {
+  top: -36px;
+  left: 180px;
+  border-width: 0 2px 37px 20px;
+}
+
+.third-logo__triangle-second_yellow {
+  top: -17px;
+  left: 255px;
+  border-width: 0 1px 18px 15px;
+}
+
+.third-logo__triangle-third_blue,
+.third-logo__triangle-fourth_blue,
+.third-logo__triangle-fifth_blue {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-color: transparent transparent #2137fc transparent;
+  transform: rotate(180deg);
+}
+
+.third-logo__triangle-third_blue {
+  bottom: -15px;
+  left: 142px;
+  border-width: 0px 2px 16px 14px;
+  z-index: 1;
+}
+
+.third-logo__triangle-fourth_blue {
+  bottom: -13px;
+  left: 218px;
+  border-width: 0 1px 14px 13px;
+  z-index: 1;
+}
+
+.third-logo__triangle-fifth_blue {
+  bottom: -15px;
+  left: 290px;
+  border-width: 0px 1px 16px 23px;
+
+  z-index: 1;
+}
