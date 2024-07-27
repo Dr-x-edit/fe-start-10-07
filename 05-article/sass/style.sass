@@ -1,0 +1,267 @@
+// ЗАГАЛЬНЕ
+*
+    box-sizing: border-box
+
+body
+    font-family: "Bai Jamjuree", sans-serif
+    font-weight: 400
+    font-style: normal
+
+h1,h2,h3,h4,h5,h6, p
+    margin: 0
+
+// ПІДКЛЮЧАЄМО ШРИФТИ
+.bai-jamjuree-medium 
+  font-family: "Bai Jamjuree", sans-serif
+  font-weight: 500
+  font-style: normal
+
+.bai-jamjuree-light-italic 
+  font-family: "Bai Jamjuree", sans-serif
+  font-weight: 300
+  font-style: italic
+
+.bai-jamjuree-regular-italic 
+  font-family: "Bai Jamjuree", sans-serif
+  font-weight: 400
+  font-style: italic
+
+// Налаштовуємо головну обгортку
+.main-wrapper
+    display: flex
+    flex-direction: column
+    padding: 119px 10px 85px
+    width: 1168px
+    margin: 0 auto
+    &__title
+        display: block
+        width: 853px
+        font-size: 64px
+        line-height: 80px
+        text-align: left
+        margin-bottom: 117px
+
+// Описуємо стандартні стилі карток двох видів
+.card-first-type, .card-second-type
+    display: flex
+    flex-direction: row
+    gap: 49px
+
+.card-first-type
+    &__box-left
+        display: flex
+        flex-direction: column
+        align-items: center
+
+.card-second-type
+    &__box-left
+        display: flex
+        flex-direction: column
+
+// Продовження опису вкладених елементів
+.box-left
+    &__text
+        display: flex
+        font-size: 24px
+        line-height: 30px
+        width: 745px
+    &__title
+        display: flex
+        font-size: 40px
+        line-height: 50px
+    &__note
+        width: 295px
+        height: 169px
+        padding: 30px 
+        border-radius: 38px
+        line-height: 30px
+        background: rgb(217, 217, 217)
+        font-size: 24px
+        position: relative
+        display: block
+        margin-bottom: 20px
+    &__note span
+        margin-left: 91px
+        margin-top: 21px
+        display: block
+    &__note span::before
+        content: ""
+        position: absolute
+        left: 11%
+        top: 75%
+        transform: translateY(-50%)
+        width: 76px
+        height: 46px
+        background-image: url("../img/first-article/image-3.png")
+
+.box-right
+    &__title
+        display: flex
+        font-size: 40px
+        line-height: 50px
+    &__text
+        display: flex
+        font-size: 24px
+        line-height: 30px
+        width: 745px
+    &__note
+        width: 295px
+        height: 169px
+        padding: 30px 
+        border-radius: 38px
+        background: rgb(217, 217, 217)
+        font-size: 24px
+        line-height: 30px
+        position: relative
+        display: block
+        margin-bottom: 20px
+
+// Стилізація "статей"
+    // Загальна
+.article 
+    display: flex
+    flex-direction: column
+    // Перша стаття
+    &__first
+        margin-bottom: 6px
+    &__first .box-left__image
+        width: 225px
+        height: 225px
+    // Друга стаття
+    &__second
+        margin-bottom: 28px
+    &__second .card-second-type
+        gap: 0px
+    &__second .card-second-type div:first-child
+        margin-right: 6px   
+    &__second .box-right
+        display: flex
+        flex-wrap: wrap
+    &__second .box-right__image-box
+        display: flex
+        flex-direction: row
+    &__second .image-box-1 img
+        width: 312px
+        height: 312px
+        margin: -50px 0 0 10px
+    &__second .image-box-2 img:first-child
+        width: 135px
+        height: 136px
+        margin: -50px 0 0 10px
+    &__second .image-box-2 img:last-child
+        width: 247px
+        height: 244px
+    &__second .image-box-2
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        margin: -120px 0 0 
+        gap: 25px
+    &__second .image-box-2 img:first-child
+        margin: 67px 0 0 0
+
+    // Третя стаття
+    &__third
+        margin-bottom: 102px
+    &__third .card-first-type
+        gap: 66px
+    &__third .box-left
+        width: 285px
+        margin-left: 26px
+    &__third .box-left div:first-child 
+        align-self: flex-start
+    &__third .box-left div:last-child 
+        margin: -15px 0 0px 0px
+        align-self: flex-end
+    &__third .image-box-1
+        margin: -50px 0 0 0
+    &__third .box-right
+        &__text
+            display: flex
+            width: 749px
+
+    // Четверта стаття
+    &__fourth
+        margin-bottom: 41px
+    &__fourth .card-second-type
+        gap: 7px
+    &__fourth .box-left
+        &__text
+            display: flex
+            width: 705px
+    &__fourth .box-right
+        display: flex
+        flex-direction: column
+        width: 424px
+        &__note
+            width: 356px
+            height: 252px
+            padding: 30px 
+            border-radius: 38px
+            background: rgb(217, 217, 217)
+            font-size: 24px
+            position: relative
+            display: block
+            margin-top: 8px
+            margin-bottom: 0
+        &__note span
+            margin-left: 108px
+            margin-top: 21px
+            display: block
+        &__note span::before
+            content: "" 
+            position: absolute
+            left: 10%
+            top: 86%
+            transform: translateY(-50%)
+            width: 76px
+            height: 46px
+            background-image: url("../img/first-article/image-3.png")
+        &__image-box
+            display: flex
+            align-items: center
+            gap: 42px
+            margin: -24px 0 0 0
+    &__fourth .box-right div:first-child
+        align-self: flex-end
+    &__fourth .box-right div:last-child
+        align-self: flex-start
+        
+    // П'ята стаття
+    &__fifth
+    &__fifth .card-first-type
+        gap: 84px
+    &__fifth .box-left 
+        &__note
+            width: 356px
+            height: 252px
+            padding: 27px 
+            border-radius: 38px
+            line-height: 30px
+            background: rgb(217, 217, 217)
+            font-size: 24px
+            position: relative
+            display: block
+            margin-bottom: 0px
+        &__note span
+            margin: 0 0 18px 85px
+            display: block
+        &__note span::before
+            content: ""
+            background-image: none
+        &__note span::after
+            content: ""
+            position: absolute
+            left: 80%
+            top: 3%
+            transform: translateY(0%)
+            width: 53px
+            height: 52px
+            background-image: url("../img/fifth-article/image-1.png")
+            background-repeat: no-repeat
+    &__fifth .box-right
+        &__text
+            display: flex
+            width: 679px
+
