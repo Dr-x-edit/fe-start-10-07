@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <meta name="description" content="My portfoilo on web" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Підключення необхідних шрифтів -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Скидання та нормалізація стилів, підключення власних сттилів -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Створюємо хедер з навігаційним меню та лого та кнопкою -->
+    <header class="header">
+      <!-- Логотип -->
+      <div class="headre__logo">
+        <img src="icons/frame-7.svg" alt="" />
+      </div>
+      <!-- Навігаційне меню -->
+      <nav class="header__nav-menu">
+        <ul>
+          <li><a href="#home" class="poppins">Home</a></li>
+          <li><a href="#about" class="poppins">About</a></li>
+          <li><a href="#skills" class="poppins">Skills</a></li>
+          <li><a href="#portfolio" class="poppins">Portfolio</a></li>
+          <li><a href="#contact" class="poppins">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Кнопка -->
+      <button class="header__button hire-button poppins">Hire Me</button>
+    </header>
+    <!-- Головна секція для інших підсекцій -->
+    <main class="main-wrapper">
+      <!-- Створюємо першу секцію -->
+      <section id="home" class="section-main">
+        <!-- Підрозділ до головної секції з інформацією про особу  -->
+        <div class="section-main__hero">
+          <div class="section-main__container">
+            <p>Hi, I am <a href="" class="inter">Shevchenko Volodymyr</a> 👋</p>
+          </div>
+          <h1 class="section-main__title section-title">
+            Creative designer & front-end developer
+          </h1>
+          <p class="section-main__text inter">
+            I design and code beautifully simple things, and I love what I do.
+          </p>
+          <div>
+            <img src="img/section-main/avataaars-1.png" alt="avatar" />
+          </div>
+        </div>
+        <!-- Підрозділ з лічильниками щодо досвіду особи -->
+        <div class="section-main__meter">
+          <!-- Перша картка лічильника -->
+          <div class="meter-card">
+            <div class="meter-card__logo">
+              <img src="icons/section-main/group-6.png" alt="" />
+            </div>
+            <div class="meter-card__text">
+              <p class="inter">
+                <span class="inter">5+</span>
+                Years of Experience
+              </p>
+            </div>
+            <div class="meter-card__arrow">
+              <img src="icons/section-main/entypo-chevron-right.png" alt="" />
+            </div>
+          </div>
+          <!-- Друга картка -->
+          <div class="meter-card">
+            <div class="meter-card__logo">
+              <img src="icons/section-main/group-6.png" alt="" />
+            </div>
+            <div class="meter-card__text">
+              <p class="inter">
+                <span class="inter">100+</span>
+                Completed Projects
+              </p>
+            </div>
+            <div class="meter-card__arrow">
+              <img src="icons/section-main/entypo-chevron-right.png" alt="" />
+            </div>
+          </div>
+          <!-- Третя картка -->
+          <div class="meter-card">
+            <div class="meter-card__logo">
+              <img src="icons/section-main/group-6.png" alt="" />
+            </div>
+            <div class="meter-card__text">
+              <p class="inter">
+                <span class="inter">50+</span>
+                Happy Clients
+              </p>
+            </div>
+            <div class="meter-card__arrow">
+              <img src="icons/section-main/entypo-chevron-right.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section-about-me">
+        <div class="section-about-me__photo">
+          <img src="img/section-about-me/group-12.png" alt="my-photo" />
+        </div>
+        <div class="section-about-me__info-box">
+          <span
+            class="section-about-me__decorate-element section-decorate-element"
+            >WHO I AM</span
+          >
+          <h3 class="section-about-me__title section-title">About Me</h3>
+          <p class="section-about-me__text section-text">
+            Hi! I’m Shevchenko Volodymyr, and I’m a designer & developer who has
+            passion for building clean web applications with intuitive
+            functionality. I enjoy the process of turning ideas into reality
+            using creative solutions. I’m always curious about learning new
+            skills, tools, and concepts. In addition to working on various solo
+            full stack projects, I have worked with creative teams, which
+            involves daily stand-ups and communications, source control, and
+            project management.
+          </p>
+          <button class="section-about-me__button hire-button">Hire Me</button>
+        </div>
+      </section>
+      <section id="skills" class="section-skils">
+        <div class="section-skils__info-box info-box">
+          <span class="section-skils__decorate-element section-decorate-element"
+            >MY SKILLS</span
+          >
+          <h3 class="section-skils__title section-title">
+            What My Programming <br />
+            Skills Included?
+          </h3>
+          <p class="section-skils__text section-text">
+            I develop simple, intuitive and responsive user interface that helps
+            users get things done with less effort and time with those
+            technologies.
+          </p>
+          <button class="section-skils__button hire-button">Hire Me</button>
+        </div>
+        <div class="section-skils__icon-box">
+          <div class="icon">
+            <img src="icons/section-skils/html.png" alt="html-icon" />
+          </div>
+          <div class="icon">
+            <img src="icons/section-skils/css.png" alt="css-icon" />
+          </div>
+          <div class="icon">
+            <img src="icons/section-skils/javascript.png" alt="js-icon" />
+          </div>
+          <div class="icon">
+            <img src="icons/section-skils/git.png" alt="git-icon" />
+          </div>
+          <div class="icon">
+            <img src="icons/section-skils/bootstrap.png" alt="bootstrap-icon" />
+          </div>
+          <div class="icon">
+            <img src="icons/section-skils/xd.png" alt="xd-icon" />
+          </div>
+          <div class="icon">
+            <img src="icons/section-skils/sass.png" alt="sass-icon" />
+          </div>
+          <div class="icon">
+            <img src="icons/section-skils/typescript.png" alt="ts-icon" />
+          </div>
+          <div class="icon">
+            <img src="icons/section-skils/python.png" alt="py-icon" />
+          </div>
+          <div class="icon">
+            <img src="icons/section-skils/tailwind.png" alt="tailwind-icon" />
+          </div>
+          <div class="icon">
+            <img src="icons/section-skils/figma.png" alt="figma-icon" />
+          </div>
+          <div class="icon">
+            <img src="icons/section-skils/github.png" alt="github-icon" />
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section-works">
+        <span class="section-works__decorate-element section-decorate-element"
+          >MY WORKS</span
+        >
+        <h3 class="section-works__title section-title">Featured Works</h3>
+        <nav class="section-works__nav-menu">
+          <ul>
+            <li><a href="#" class="poppins">All</a></li>
+            <li><a href="#" class="poppins">Mobile App</a></li>
+            <li><a href="#" class="poppins">Website Design</a></li>
+            <li><a href="#" class="poppins">Website Development</a></li>
+          </ul>
+        </nav>
+        <div class="example-container">
+          <div class="example-container__column">
+            <div class="">
+              <img src="img/section-works/E-01-01.png" alt="example-01-01" />
+            </div>
+            <div class="">
+              <img src="img/section-works/E-01-02.png" alt="example-01-02" />
+            </div>
+          </div>
+          <div class="example-container__column">
+            <div class="">
+              <img src="img/section-works/E-02-01.png" alt="example-02-01" />
+            </div>
+            <div class="">
+              <img src="img/section-works/E-02-02.png" alt="example-02-02" />
+            </div>
+          </div>
+          <div class="example-container__column">
+            <div class="">
+              <img src="img/section-works/E-03-01.png" alt="example-03-01" />
+            </div>
+            <div class="">
+              <img src="img/section-works/E-03-02.png" alt="example-03-02" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-reviews">
+        <span class="section-reviews__decorate-element section-decorate-element"
+          >TESTIMONIALS</span
+        >
+        <h3 class="section-reviews__title section-title">What Customer Says</h3>
+        <div class="card-wrapper section-reviews__card-wrapper">
+          <div class="card">
+            <div class="card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus
+            </p>
+            <div class="profile card__profile">
+              <img src="img/section-reviews/33.jpg" alt="icon-profile" />
+              <div class="profile__name">
+                <h4 class="profile__title">Khushi Gupta</h4>
+                <p class="profile__text">Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus
+            </p>
+            <div class="profile card__profile">
+              <img src="img/section-reviews/33.jpg" alt="icon-profile" />
+              <div class="profile__name">
+                <h4 class="profile__title">Khushi Gupta</h4>
+                <p class="profile__text">Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus
+            </p>
+            <div class="profile card__profile">
+              <img src="img/section-reviews/33.jpg" alt="icon-profile" />
+              <div class="profile__name">
+                <h4 class="profile__title">Khushi Gupta</h4>
+                <p class="profile__text">Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Футер з контактами та лінками -->
+    <footer id="contact" class="footer">
+      <div class="about-autor footer__about-autor">
+        <h3 class="about-autor__title">
+          Shevchenko <br />
+          Volodymyr.
+        </h3>
+        <p class="about-autor__text">
+          Creative designer & front-end <br />
+          developer
+        </p>
+      </div>
+      <div class="useful-link footer__useful-link">
+        <h4 class="useful-link__title work-sans">Useful Links</h4>
+        <nav class="footer__nav-menu">
+          <ul>
+            <li><a href="#home" class="work-sans">Home</a></li>
+            <li><a href="#about" class="work-sans">About</a></li>
+            <li><a href="#skills" class="work-sans">Skills</a></li>
+            <li><a href="#portfolio" class="work-sans">Portfolio</a></li>
+            <li><a href="#contact" class="work-sans">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="social-media footer__social-media">
+        <h4 class="social-media__title work-sans">Useful Links</h4>
+        <nav class="footer__nav-menu">
+          <ul>
+            <li><a href="#" class="work-sans">Instagram</a></li>
+            <li><a href="#" class="work-sans">linkedin</a></li>
+            <li><a href="#" class="work-sans">Dribbble</a></li>
+            <li><a href="#" class="work-sans">Behance</a></li>
+            <li><a href="#" class="work-sans">Github</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="newletter footer__newletter">
+        <h4 class="newletter__title work-sans">Useful Links</h4>
+        <p class="newletter__text work-sans">
+          Enter your email and get notified <br />
+          about news, of.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

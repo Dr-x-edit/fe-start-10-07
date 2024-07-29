@@ -1,0 +1,387 @@
+// ЗАГАЛЬНЕ
+// @import "resets.scss"
+@import "normalizez.scss"
+
+$main-color:  #ffffff
+$accent-color: #FFB742
+$bg-color: #212529
+$drark-accent-color: #292B2E
+
+*
+    box-sizing: border-box
+
+body
+    background-color: $bg-color
+    font-family: "Poppins", sans-serif
+    font-weight: 400
+    font-style: normal
+    color: $main-color
+
+h1,h2,h3,h4,h5,h6,p, body
+    margin: 0
+
+header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    position: sticky
+    top: 0
+    left: 0
+    z-index: 1
+    max-width: 1440px
+    // max-height: 66px
+    margin: 0 auto
+    padding: 17px 50px 0
+    position: sticky
+    background-color: $bg-color
+
+ul
+    display: flex
+    list-style-type: none
+    text-align: center
+    padding: 0px
+    gap: 25px
+
+li
+    display: inline
+
+// Підключення шрифтів
+.poppins
+  font-family: "Poppins", sans-serif
+  font-style: normal
+.inter
+  font-family: "Inter", sans-serif
+  font-style: normal
+.work-sans
+  font-family: "Work Sans", sans-serif
+  font-style: normal
+
+//Стилізація повторюваних елементів
+.hire-button
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding: 12px 26px
+    border: 2px solid $accent-color
+    border-radius: 50px
+    background: $accent-color
+    font-size: 18px
+    font-weight: 700
+    line-height: 30px
+    letter-spacing: 0%
+
+.section-title
+    font-family: "Roboto", sans-serif
+    color: $main-color
+    font-style: normal
+    font-size: 48px
+    font-weight: 700
+    letter-spacing: 0%
+    text-transform: capitalize
+
+.section-text
+    color: $main-color
+    font-family: Poppins
+    font-size: 16px
+    font-weight: 400
+    line-height: 30px
+
+
+.section-decorate-element
+    padding: 6px 25px
+    background-color: $drark-accent-color
+    border-radius: 50px
+    font-size: 20px
+    font-weight: 600
+    line-height: 30px
+    color: $accent-color
+    font-family: "Poppins", sans-serif
+    font-style: normal
+    font-weight: 600
+
+.icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 80px
+    height: 80px
+    border-radius: 10px
+    background-color: #383E45
+
+.icon:hover
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    background-color: rgba(255, 183, 66, 0.5)
+
+// Стилізація хедеру
+.header
+    margin-bottom: 108px
+    &__nav-menu
+        padding: 10px
+    &__nav-menu a
+        color: $main-color
+        text-decoration: none
+        font-weight: 600
+        font-size: 18px
+        line-height: 27px
+    &__nav-menu a:hover
+        color: $accent-color
+
+
+// Стилізація головної секції
+.main-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 1396px
+    margin: 0 auto
+
+// Стилізація секцій
+
+
+.section-main
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    margin-bottom: 221.4px
+    &__hero
+        display: flex
+        flex-direction: column
+        align-items: center
+        color: $main-color
+        max-width: 964px
+        margin-bottom: 136.27px
+    &__title
+        font-family: "Inter", sans-serif
+        text-align: center
+        line-height: 90.85px
+        
+    &__hero h1
+        margin-bottom: 25px
+    &__hero p
+        font-size: 24px
+        font-weight: 400
+        line-height: 50.75px
+        margin-bottom: 22px
+    &__container p, a
+        color: $main-color
+        position: relative
+        font-size: 32px
+        font-weight: 700
+        line-height: 50.75px
+    &__container a
+        color: $accent-color
+    &__meter
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        width: 100%
+
+
+.meter-card
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    width: 416px
+    height: 120px
+    padding: 28px 30px
+    gap: 56px
+    background-color: $drark-accent-color
+    border-radius: 10px
+    &__text p
+        display: flex
+        flex-direction: column
+        text-align: center
+        color: $main-color
+        font-size: 16px
+        font-weight: 700
+        line-height: 193%
+    &__text p span
+        color: $accent-color
+        font-size: 32px
+        font-weight: 700
+        line-height: 126%
+
+.meter-card:hover
+    background: linear-gradient(131.99deg, rgb(255, 183, 66) 0%,rgba(255, 123, 66, 0.76) 99.329%)
+
+.meter-card:hover .meter-card__text p
+    color: $bg-color
+
+.meter-card:hover .meter-card__text span
+    color: $bg-color
+
+.section-about-me, .section-skils, .example-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.section-about-me
+    gap: 46.17px
+    margin-bottom: 68px 
+    &__title
+        margin-bottom: 29.49px
+    &__text
+        margin-bottom: 54.45px
+
+.section-skils
+    display: flex
+    gap: 97px
+    margin-bottom: 136.71px
+    &__title
+        line-height: 56px
+        margin-bottom: 29.49px
+    &__text
+        width: 672px
+        margin-bottom: 63.25px
+    &__icon-box
+        display: flex
+        align-content: start
+        flex-wrap: wrap
+        justify-content: flex-end
+        gap: 16px
+
+.section-works
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 1234px
+    &__title
+        margin-bottom: 30px
+    &__nav-menu
+        margin-bottom: 48px
+    &__nav-menu ul
+        display: flex
+        margin: 0
+        height: 40px
+        gap: 24px
+    &__nav-menu li
+        display: flex
+        align-items: center
+    &__nav-menu a
+        display: flex
+        color: $main-color
+        text-decoration: none
+        font-weight: 600
+        padding: 5px 20px
+        font-size: 18px
+        line-height: 30px
+    &__nav-menu a:hover
+        border-radius: 3px
+        padding: 5px 20px
+        background-color: $accent-color
+        color: $bg-color
+
+.example-container
+    gap: 21.09px
+    margin-bottom: 135.59px
+    &__column
+        display: flex
+        flex-direction: column
+        gap: 30px
+
+.section-reviews
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 235.15px
+    &__title
+        margin-bottom: 90.29px
+    &__card-wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        max-width: 1217px
+        gap: 40px
+
+.card
+    display: flex
+    flex-direction: column
+    width: 378.94px
+    padding: 51.07px 51.91px 49.78px 33px
+    border-radius: 7.93px
+    background: $main-color 
+    &__stars
+        margin-bottom: 21.87px
+    &__text
+        font-size: 20px
+        font-weight: 400
+        line-height: 34px
+        color: #000
+        margin-bottom: 36.94px
+    &__profile
+        display: flex
+        flex-direction: row
+        align-items: center
+        color: #000
+        gap: 24px
+
+
+.fa-solid
+    font-size: 13px
+    color: $accent-color
+
+.profile
+    &__title
+        font-size: 20px
+        font-weight: 700
+        line-height: 34px
+    &__text
+        font-size: 16px
+        font-weight: 400
+        line-height: 34px
+
+
+.footer
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    max-width: 1321px
+    margin: 0 auto
+    padding: 148px 0 90px 
+    background-color: #1C1C1C
+    &__about-autor
+        display: flex
+        flex-direction: column
+    &__nav-menu ul
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 0
+        margin: 0
+    &__nav-menu a
+        color: #7B7B7B
+        text-decoration: none
+        font-size: 18px
+        font-weight: 500
+        line-height: 36.42px
+    &__nav-menu a:hover
+        color: $accent-color
+
+.useful-link__title, .social-media__title, .newletter__title
+    margin-bottom: 13.13px
+    font-size: 22px
+    font-weight: 700
+    line-height: 31.89px
+
+.newletter__text
+    color: #7B7B7B
+    font-size: 18px
+    font-weight: 500
+    line-height: 36.42px
+
+.about-autor
+    &__title
+        font-size: 32px
+        font-weight: 700
+        line-height: 100%
+        color: $accent-color
+        margin-bottom: 30.62px
+    &__text
+        font-family: Work Sans
+        font-size: 16px
+        font-weight: 600
+        line-height: 32.38px
