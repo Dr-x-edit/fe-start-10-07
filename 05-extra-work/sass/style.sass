@@ -27,10 +27,8 @@ header
     align-items: center
     position: sticky
     top: 0
-    left: 0
     z-index: 1
     max-width: 1440px
-    // max-height: 66px
     margin: 0 auto
     padding: 17px 50px 0
     position: sticky
@@ -336,13 +334,15 @@ li
 
 
 .footer
-    display: flex
-    flex-direction: row
-    justify-content: space-around
-    max-width: 1321px
-    margin: 0 auto
-    padding: 148px 0 90px 
-    background-color: #1C1C1C
+    background: #1C1C1C
+
+    &__wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        max-width: 1321px
+        margin: 0 auto
+        padding: 148px 0 90px 
     &__about-autor
         display: flex
         flex-direction: column
