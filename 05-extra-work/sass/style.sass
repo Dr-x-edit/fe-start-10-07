@@ -22,15 +22,14 @@ h1,h2,h3,h4,h5,h6,p, body
 
 header
     display: flex
-    flex-direction: row
     justify-content: space-between
     align-items: center
     position: sticky
     top: 0
     z-index: 1
-    max-width: 1440px
+    width: 93%
     margin: 0 auto
-    padding: 17px 50px 0
+    padding: 17px 0 0 0
     position: sticky
     background-color: $bg-color
 
@@ -57,8 +56,7 @@ li
 
 //Стилізація повторюваних елементів
 .hire-button
-    display: flex
-    flex-direction: row
+    // display: flex
     justify-content: center
     align-items: center
     padding: 12px 26px
@@ -132,7 +130,7 @@ li
     display: flex
     flex-direction: column
     align-items: center
-    max-width: 1396px
+    width: 93%
     margin: 0 auto
 
 // Стилізація секцій
@@ -149,7 +147,7 @@ li
         flex-direction: column
         align-items: center
         color: $main-color
-        max-width: 964px
+        width: 72%
         margin-bottom: 136.27px
     &__title
         font-family: "Inter", sans-serif
@@ -173,18 +171,15 @@ li
         color: $accent-color
     &__meter
         display: flex
-        flex-direction: row
         justify-content: space-around
-        width: 100%
+        width: 97%
 
 
 .meter-card
     display: flex
-    flex-direction: row
     justify-content: space-between
     align-items: center
-    width: 416px
-    height: 120px
+    width: 32%
     padding: 28px 30px
     gap: 56px
     background-color: $drark-accent-color
@@ -218,15 +213,24 @@ li
     justify-content: space-between
 
 .section-about-me
+    display: flex
+    width: 100%
     gap: 46.17px
     margin-bottom: 68px 
+    &__info-box
+        display: flexbox
+        flex-direction: column
     &__title
         margin-bottom: 29.49px
     &__text
         margin-bottom: 54.45px
+        // width: 100%
+    &__photo
+        width: 45%
 
 .section-skils
     display: flex
+    width: 100%
     gap: 97px
     margin-bottom: 136.71px
     &__title
