@@ -442,8 +442,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  padding: 16px;
+  width: 14%;
   border-radius: 10px;
   background-color: #383E45;
 }
@@ -610,13 +610,17 @@ li {
   margin-bottom: 136.71px;
 }
 
+.section-skils__info-box {
+  width: 51%;
+}
+
 .section-skils__title {
   line-height: 56px;
   margin-bottom: 29.49px;
 }
 
 .section-skils__text {
-  width: 672px;
+  width: 100%;
   margin-bottom: 63.25px;
 }
 
@@ -625,6 +629,7 @@ li {
   align-content: start;
   flex-wrap: wrap;
   justify-content: flex-end;
+  width: 42%;
   gap: 16px;
 }
 
