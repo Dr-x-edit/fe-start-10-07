@@ -1,0 +1,849 @@
+// ЗАГАЛЬНЕ
+// @import "resets.scss"
+@import "normalizez.scss"
+
+// Визначення кольорів
+$main-color:  #ffffff
+$accent-color: #FF922C
+$secondary-color: #C8C8C8
+$bg-color: #24252A
+
+.dm-serif
+  font-family: "DM Serif Text", serif
+  font-style: normal
+
+.dm-sans
+  font-family: "DM Sans", sans-serif
+  font-optical-sizing: auto
+  font-style: normal
+
+.poppins
+  font-family: "Poppins", sans-serif
+  font-style: normal
+
+
+*
+  box-sizing: border-box
+
+h1,h2,h3,h4,h5,h6,p,body
+  margin: 0
+
+body
+  background-color: $bg-color
+  color: $main-color
+
+
+
+.main-wrapper
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-areas: "nav-menu nav-menu nav-menu" "header header ." "breakfast lunch dinner" "description-menu description-menu description-menu" "about-us about-us about-us"
+  width: 89%
+  margin: 0 auto
+  &__nav-menu
+    grid-area: nav-menu
+  &__header
+    grid-area: header
+  &__item-menu-breakfast
+    grid-area: breakfast
+    justify-self: end
+
+    display: grid
+    grid-template-columns: auto
+    grid-template-rows: auto 11px auto 24px
+    grid-template-areas: "title" "." "img" "."
+    justify-items: center
+    height: min-content
+
+  // МОЖНА ЗАФЛЕКСИТИ XD XD XD 
+    // display: flex
+    // flex-direction: column
+    // align-items: center
+  
+  &__item-menu-lunch
+    grid-area: lunch
+    justify-self: center
+
+    display: grid
+    grid-template-columns: auto
+    grid-template-rows: auto 11px auto 24px
+    grid-template-areas: "title" "." "img" "."
+    justify-items: center
+    height: min-content
+
+  &__item-menu-dinner
+    grid-area: dinner
+    justify-self: start
+
+    display: grid
+    grid-template-columns: auto
+    grid-template-rows: auto 11px auto 24px
+    grid-template-areas: "title" "." "img" "."
+    justify-items: center
+
+  &__item-menu-breakfast span
+    font-size: 14px
+    font-weight: 500
+    line-height: 21px
+    text-transform: capitalize
+  &__description-menu
+    grid-area: description-menu
+  &__about-us
+    grid-area: about-us
+  &__description-menu
+    display: grid
+    grid-template-columns: 27px auto 90px auto 67px auto 62px auto
+    grid-template-rows: auto auto 43px
+    grid-template-areas: ". title title title title title title title" ". ingredients . size-portion . portion-energy . time-delivery"
+    width: 59%
+
+.nav-menu
+  &__list
+    display: grid
+    grid-template-columns: auto auto auto auto 33% 
+    grid-template-rows: auto 78px
+    grid-template-areas: "first-link second-link third-link fourth-link search-button" ". . . . ."
+    width: 100%
+    padding-top: 25px
+
+    justify-content: space-between
+    align-items: center
+
+    font-size: 22px
+    font-weight: 400
+    line-height: 20.86px
+
+  &__item:nth-child(1)
+    grid-area: first-link
+
+  &__item:nth-child(2)
+    grid-area: second-link
+
+  &__item:nth-child(3)
+    grid-area: third-link
+
+  &__item:nth-child(4)
+    grid-area: fourth-link
+
+  &__item:nth-child(5)
+    grid-area: search-button
+    justify-self: end
+    width: 100%
+
+  &__item:nth-child(5) input
+    border: none
+    width: 100%
+    border-radius: 30px
+    padding: 20px 37px
+    box-shadow: 0px 12px 40px -16px rgba(0, 0, 0, 0.1)
+    background: rgba(255, 249, 240, 0.1)
+    animation-name: search
+    animation-duration: 3s
+    font-size: 22px
+    font-weight: 400
+
+@keyframes search
+  0%
+    opacity: 0
+    width: 0%
+    background: linear-gradient(to bottom, #ff9431 0%,#ff9431 33%,#3dc928 40%,#991818 47%,#991818 47%,#991818 59%,#991818 59%,#f4ff32 67%,#ff9431 70%,#ff9431 100%)
+  35%
+    opacity: 0.6
+    width: 0%
+    background: linear-gradient(to bottom, #ff9431 0%,#ff9431 33%,#3dc928 40%,#991818 47%,#991818 47%,#991818 59%,#991818 59%,#f4ff32 67%,#ff9431 70%,#ff9431 100%)
+  50%
+    opacity: 0.6
+    background: rgba(255, 249, 240, 0.1)
+  60%
+    opacity: 0.6
+    width: 95%
+  100%
+    opacity: 1
+    width: 100%
+
+.header
+  display: grid
+  grid-template-columns: 27px 268px 61%
+  grid-template-rows: auto auto 21px
+  grid-template-areas: ". sub-title title" ". text text"
+  grid-column-gap: 11px
+  width: 80%
+
+  &__sub-title
+    grid-area: sub-title
+    width: max-content
+  &__sub-title h2
+    font-size: 8rem
+    font-weight: 700
+    line-height: 118.5px
+    letter-spacing: -3.5px
+  &__title
+    grid-area: title
+
+    align-self: center
+  &__title h1
+    color: rgba(255, 146, 44, 0.78)
+    font-size: 3.25rem
+    font-weight: 700
+    line-height: 49.3px
+    letter-spacing: 10.4px
+  &__text
+    grid-area: text
+    width: 100%
+  &__text p
+    color: #909090
+    font-size: 22px
+    font-weight: 400
+    line-height: 30.54px
+  
+.list-item-menu
+  &__img-breakfast
+    background: url(../img/breakfast.png) center/134% no-repeat
+    background-position: 50% 39%
+    // background: url(../img/breakfast.png) center/cover no-repeat
+    width: 151px
+    height: 151px
+    border: 3px solid $main-color
+    border-radius: 150px
+    box-shadow: 0px 6px 19px 0px rgba(86, 85, 83, 0.76)
+  &__img-breakfast:nth-child(1)
+    grid-area: title
+  &__img-breakfast:nth-child(2)
+    grid-area: img
+  &__img-lunch
+    background: url(../img/lunch.png) center/134% no-repeat
+    width: 151px
+    height: 151px
+    border: 3px solid $main-color
+    border-radius: 150px
+    box-shadow: 0px 6px 19px 0px rgba(86, 85, 83, 0.76)
+  &__img-lunch:nth-child(1)
+    grid-area: title
+  &__img-lunch:nth-child(2)
+    grid-area: img
+  &__img-dinner
+    background: url(../img/dinner.png) center/134% no-repeat
+    width: 151px
+    height: 151px
+    border: 3px solid $main-color
+    border-radius: 150px
+    box-shadow: 0px 6px 19px 0px rgba(86, 85, 83, 0.76)
+  &__img-dinner:nth-child(1)
+    grid-area: title
+  &__img-dinner:nth-child(2)
+    grid-area: img
+  &__img-breakfast:hover
+    background: url(../img/breakfast.png) center/134% no-repeat
+    background-position: 50% 39%
+    border: 6px solid $main-color
+  &__img-lunch:hover
+    border: 6px solid $main-color
+  &__img-dinner:hover
+    border: 6px solid $main-color
+  
+.description-menu
+  &__title
+    grid-area: title
+
+    font-size: 32px
+    font-weight: 700
+    line-height: 42px
+    letter-spacing: -3%
+
+  &__ingredients
+    grid-area: ingredients
+    list-style-type: disc
+    list-style-position: inside
+
+    font-size: 14px
+    font-weight: 400
+    line-height: 20px
+    letter-spacing: -3%
+
+  &__size-portion, &__portion-energy, &__time-delivery
+    display: grid
+    grid-template-columns: auto
+    grid-template-rows: auto auto 7px
+    // width: min-content
+    height: min-content
+    row-gap: 8px
+    align-self: end
+  &__size-portion
+    grid-area: size-portion
+  &__portion-energy
+    grid-area: portion-energy
+  &__time-delivery
+    grid-area: time-delivery
+
+.ingredients
+  &__item span
+    color: #FF922C
+
+.acent
+  font-size: 14px
+  font-weight: 500
+  line-height: 18px
+  letter-spacing: -3%
+
+  color: #FF922C
+
+.text-desription
+  font-size: 18px
+  font-weight: 500
+  line-height: 23px
+  letter-spacing: -3%
+
+.about-us
+  display: grid
+  grid-template-columns: min-content 36px auto
+  grid-template-rows: auto 16px auto 20px
+  grid-template-areas: "title title title" ". . ." "text . rating"
+
+  &__title
+    grid-area: title
+
+    justify-self: center
+
+    font-size: 48px
+    font-weight: 400
+    line-height: 66px
+    letter-spacing: 5.5px
+
+
+  &__text
+    grid-area: text
+
+    color: rgba(170, 167, 167, 0.46)
+    font-size: 18px
+    font-weight: 500
+    line-height: 23px
+    width: min-content
+  &__rating
+    grid-area: rating
+    // width: min-content
+
+    display: flex
+    align-items: unset
+    gap: 4px
+    align-items: center
+
+
+    font-size: 18px
+    font-weight: 400
+    line-height: 23px
+
+  &__rating .fa-star
+    font-size: 24px
+    color: #F2CF63
+  &__counter
+
+    font-size: 12px
+    font-weight: 400
+    line-height: 16px
+
+    color:#A5A5A5
+
+
+
+@media (min-width: 821px) and (max-width: 1237px)
+  .main-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "nav-menu nav-menu nav-menu" "header header header" "breakfast lunch dinner" "description-menu description-menu description-menu" "about-us about-us about-us"
+    width: 89%
+    margin: 0 auto
+    &__description-menu
+      display: grid
+      grid-template-columns: 27px auto 67px auto 67px auto 62px auto
+      grid-template-rows: auto auto 43px
+      grid-template-areas: ". title title title title title title title" ". ingredients . size-portion . portion-energy . time-delivery"
+      width: 87%
+  .nav-menu
+    &__list
+      display: grid
+      grid-template-columns: auto auto auto auto 33% 
+      grid-template-rows: auto 25px
+      grid-template-areas: "first-link second-link third-link fourth-link search-button" ". . . . ."
+      width: 100%
+      padding-top: 25px
+
+      justify-content: space-between
+      align-items: center
+
+      font-size: 1.25rem
+      font-weight: 400
+      line-height: 20.86px
+    &__item:nth-child(5) input
+      border: none
+      width: 100%
+      border-radius: 30px
+      padding: 20px 37px
+      box-shadow: 0px 12px 40px -16px rgba(0, 0, 0, 0.1)
+      background: rgba(255, 249, 240, 0.1)
+      animation-name: search
+      animation-duration: 3s
+      font-size: 1.25rem
+      font-weight: 400
+  .header
+    display: grid
+    grid-template-columns: auto auto
+    grid-template-rows: auto auto 21px
+    grid-template-areas: "sub-title title" "text text"
+    grid-column-gap: 11px
+    width: 100%
+    align-self: center
+
+    &__sub-title
+      grid-area: sub-title
+      display: grid
+      justify-self: end
+    &__sub-title h2
+      font-size: 7rem
+      font-weight: 700
+      line-height: 118.5px
+      letter-spacing: -3.5px
+    &__title
+      display: grid
+
+
+      align-self: center
+    &__title h1
+      color: rgba(255, 146, 44, 0.78)
+      font-size: 3rem
+      font-weight: 700
+      line-height: 49.3px
+      letter-spacing: 10.4px
+    &__text
+      grid-area: text
+      width: 100%
+      text-align: center
+  .about-us
+    display: grid
+    grid-template-columns: min-content 36px auto
+    grid-template-rows: auto 16px auto 20px
+    grid-template-areas: "title title title" ". . ." "text . rating"
+  
+    &__title
+      grid-area: title
+  
+      justify-self: center
+  
+      font-size: 2.5rem
+      font-weight: 400
+      line-height: 66px
+      letter-spacing: 5.5px
+
+@media (min-width: 689px) and (max-width: 820px)
+  .main-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "nav-menu nav-menu nav-menu" "header header header" "breakfast lunch dinner" "description-menu description-menu description-menu" "about-us about-us about-us"
+    width: 89%
+    margin: 0 auto
+    &__description-menu
+      display: grid
+      grid-template-columns: 27px auto 60px auto 60px auto 60px auto
+      grid-template-rows: auto auto 43px
+      grid-template-areas: ". title title title title title title title" ". ingredients . size-portion . portion-energy . time-delivery"
+      width: 100%
+  .nav-menu
+    &__list
+      display: grid
+      grid-template-columns: auto auto auto auto 33% 
+      grid-template-rows: auto 25px
+      grid-template-areas: "first-link second-link third-link fourth-link search-button" ". . . . ."
+      width: 100%
+      padding-top: 25px
+
+      justify-content: space-between
+      align-items: center
+
+      font-size: 1.25rem
+      font-weight: 400
+      line-height: 20.86px
+    &__item:nth-child(5) input
+      border: none
+      width: 100%
+      border-radius: 30px
+      padding: 20px 37px
+      box-shadow: 0px 12px 40px -16px rgba(0, 0, 0, 0.1)
+      background: rgba(255, 249, 240, 0.1)
+      animation-name: search
+      animation-duration: 3s
+      font-size: 1.25rem
+      font-weight: 400
+  .header
+    display: grid
+    grid-template-columns: auto auto
+    grid-template-rows: auto auto 21px
+    grid-template-areas: "sub-title title" "text text"
+    grid-column-gap: 11px
+    width: 100%
+    align-self: center
+
+    &__sub-title
+      grid-area: sub-title
+      display: grid
+      justify-self: end
+    &__sub-title h2
+      font-size: 7rem
+      font-weight: 700
+      line-height: 118.5px
+      letter-spacing: -3.5px
+    &__title
+      display: grid
+
+
+      align-self: center
+    &__title h1
+      color: rgba(255, 146, 44, 0.78)
+      font-size: 3rem
+      font-weight: 700
+      line-height: 49.3px
+      letter-spacing: 10.4px
+    &__text
+      grid-area: text
+      width: 100%
+      text-align: center
+  .about-us
+    display: grid
+    grid-template-columns: min-content 36px auto
+    grid-template-rows: auto 16px auto 20px
+    grid-template-areas: "title title title" ". . ." "text . rating"
+  
+    &__title
+      grid-area: title
+  
+      justify-self: center
+  
+      font-size: 2.5rem
+      font-weight: 400
+      line-height: 66px
+      letter-spacing: 5.5px
+
+@media (min-width: 320px) and (max-width: 688px)
+  .main-wrapper
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: auto auto auto auto auto auto auto
+    grid-template-areas: "nav-menu" "header" "breakfast" "lunch" "dinner" "description-menu" "about-us"
+    width: 89%
+    margin: 0 auto
+    &__nav-menu
+      grid-area: nav-menu
+    &__header
+      grid-area: header
+    
+    &__item-menu-breakfast
+      grid-area: breakfast
+      justify-self: center
+
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: auto 11px auto 24px
+      grid-template-areas: "title" "." "img" "."
+      justify-items: center
+      height: min-content
+
+    &__item-menu-lunch
+      grid-area: lunch
+      justify-self: center
+
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: auto 11px auto 24px
+      grid-template-areas: "title" "." "img" "."
+      justify-items: center
+      height: min-content
+
+    &__item-menu-dinner
+      grid-area: dinner
+      justify-self: center
+
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: auto 11px auto 24px
+      grid-template-areas: "title" "." "img" "."
+      justify-items: center
+
+    &__item-menu-breakfast span
+      font-size: 14px
+      font-weight: 500
+      line-height: 21px
+      text-transform: capitalize
+    &__description-menu
+      grid-area: description-menu
+    &__about-us
+      grid-area: about-us
+    &__description-menu
+      display: grid
+      grid-template-columns: 1fr
+      grid-template-rows: auto auto auto auto auto 33px
+      grid-template-areas: "title" "ingredients" "size-portion" "portion-energy" "time-delivery"
+      row-gap: 10px
+      width: 100%
+      justify-items: center
+
+  .nav-menu
+    &__list
+      display: grid
+      grid-template-columns: 1fr 1fr 
+      grid-template-rows: auto auto auto 
+      grid-template-areas: "first-link second-link" "third-link fourth-link" "search-button search-button" ". ."
+      row-gap: 25px
+      width: 100%
+      padding-top: 25px
+
+      justify-content: space-between
+      justify-items: center
+      align-items: center
+
+      font-size: 22px
+      font-weight: 400
+      line-height: 20.86px
+
+    &__item:nth-child(1)
+      grid-area: first-link
+
+    &__item:nth-child(2)
+      grid-area: second-link
+
+    &__item:nth-child(3)
+      grid-area: third-link
+
+    &__item:nth-child(4)
+      grid-area: fourth-link
+
+    &__item:nth-child(5)
+      grid-area: search-button
+      justify-self: end
+      // width: 100%
+
+    &__item:nth-child(5) input
+      border: none
+      width: 100%
+      border-radius: 30px
+      padding: 20px 37px
+      box-shadow: 0px 12px 40px -16px rgba(0, 0, 0, 0.1)
+      background: rgba(255, 249, 240, 0.1)
+      animation-name: search
+      animation-duration: 3s
+      font-size: 22px
+      font-weight: 400
+      color: rgba(156, 152, 152, 0.47)
+
+  @keyframes search
+    0%
+      opacity: 0
+      width: 0%
+      background: linear-gradient(to bottom, #ff9431 0%,#ff9431 33%,#3dc928 40%,#991818 47%,#991818 47%,#991818 59%,#991818 59%,#f4ff32 67%,#ff9431 70%,#ff9431 100%)
+    35%
+      opacity: 0.6
+      width: 0%
+      background: linear-gradient(to bottom, #ff9431 0%,#ff9431 33%,#3dc928 40%,#991818 47%,#991818 47%,#991818 59%,#991818 59%,#f4ff32 67%,#ff9431 70%,#ff9431 100%)
+    50%
+      opacity: 0.6
+      background: rgba(255, 249, 240, 0.1)
+    60%
+      opacity: 0.6
+      width: 95%
+    100%
+      opacity: 1
+      width: 100%
+
+  .header
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: auto auto auto 21px
+    grid-template-areas: "sub-title" "title" "text"
+    grid-column-gap: 11px
+    width: 100%
+
+    &__sub-title
+      grid-area: sub-title
+      display: grid
+      justify-self: center
+
+    &__sub-title h2
+      font-size: 4rem
+      font-weight: 700
+      line-height: 80.5px
+      letter-spacing: -3.5px
+    &__title
+      grid-area: title
+      display: grid
+      text-align: center
+
+      align-self: center
+    &__title h1
+      color: rgba(255, 146, 44, 0.78)
+      font-size: 2rem
+      font-weight: 700
+      line-height: 39.3px
+      letter-spacing: 5.4px
+
+    &__title h1>br
+      display: none
+
+    &__text
+      grid-area: text
+      text-align: center
+      width: 100%
+
+    &__text p
+      color: #909090
+      font-size: 1rem
+      font-weight: 400
+      line-height: 30.54px
+
+  .list-item-menu
+    &__img-breakfast
+      background: url(../img/breakfast.png) center/134% no-repeat
+      background-position: 50% 39%
+      // background: url(../img/breakfast.png) center/cover no-repeat
+      width: 151px
+      height: 151px
+      border: 3px solid $main-color
+      border-radius: 150px
+      box-shadow: 0px 6px 19px 0px rgba(86, 85, 83, 0.76)
+    &__img-breakfast:nth-child(1)
+      grid-area: title
+    &__img-breakfast:nth-child(2)
+      grid-area: img
+    &__img-lunch
+      background: url(../img/lunch.png) center/134% no-repeat
+      width: 151px
+      height: 151px
+      border: 3px solid $main-color
+      border-radius: 150px
+      box-shadow: 0px 6px 19px 0px rgba(86, 85, 83, 0.76)
+    &__img-lunch:nth-child(1)
+      grid-area: title
+    &__img-lunch:nth-child(2)
+      grid-area: img
+    &__img-dinner
+      background: url(../img/dinner.png) center/134% no-repeat
+      width: 151px
+      height: 151px
+      border: 3px solid $main-color
+      border-radius: 150px
+      box-shadow: 0px 6px 19px 0px rgba(86, 85, 83, 0.76)
+    &__img-dinner:nth-child(1)
+      grid-area: title
+    &__img-dinner:nth-child(2)
+      grid-area: img
+    &__img-breakfast:hover
+      background: url(../img/breakfast.png) center/134% no-repeat
+      background-position: 50% 39%
+      border: 6px solid $main-color
+    &__img-lunch:hover
+      border: 6px solid $main-color
+    &__img-dinner:hover
+      border: 6px solid $main-color
+
+  .description-menu
+    &__title
+      grid-area: title
+
+      text-align: center
+      font-size: 32px
+      font-weight: 700
+      line-height: 42px
+      letter-spacing: -3%
+
+
+    &__ingredients
+      grid-area: ingredients
+      list-style-type: disc
+      list-style-position: inside
+
+      font-size: 14px
+      font-weight: 400
+      line-height: 20px
+      letter-spacing: -3%
+
+    &__size-portion, &__portion-energy, &__time-delivery
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: auto auto 7px
+      justify-items: center
+      height: min-content
+      row-gap: 8px
+      align-self: end
+    &__size-portion
+      grid-area: size-portion
+    &__portion-energy
+      grid-area: portion-energy
+    &__time-delivery
+      grid-area: time-delivery
+
+  .ingredients
+    &__item span
+      color: #FF922C
+
+  .acent
+    font-size: 14px
+    font-weight: 500
+    line-height: 18px
+    letter-spacing: -3%
+
+    color: #FF922C
+
+  .text-desription
+    font-size: 18px
+    font-weight: 500
+    line-height: 23px
+    letter-spacing: -3%
+
+  .about-us
+    display: grid
+    grid-template-columns: min-content auto
+    grid-template-rows: auto 16px auto 20px
+    grid-template-areas: "title title" ". ." "text rating"
+    justify-content: space-between
+
+    &__title
+      grid-area: title
+
+      justify-self: center
+
+      font-size: 1rem
+      font-weight: 400
+      line-height: 36px
+      letter-spacing: 1.5px
+
+
+
+    &__text
+      grid-area: text
+
+      color: rgba(170, 167, 167, 0.46)
+      font-size: 18px
+      font-weight: 500
+      line-height: 23px
+      width: min-content
+    &__rating
+      grid-area: rating
+      // width: min-content
+
+      display: flex
+      align-items: unset
+      gap: 4px
+      align-items: center
+      justify-content: flex-end
+
+
+      font-size: 18px
+      font-weight: 400
+      line-height: 23px
+
+    &__rating .fa-star
+      font-size: 24px
+      color: #F2CF63
+    &__counter
+
+      font-size: 12px
+      font-weight: 400
+      line-height: 16px
+
+      color:#A5A5A5

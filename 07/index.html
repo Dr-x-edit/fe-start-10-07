@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast Food Delivery</title>
+    <meta name="description" content="The best food delivery in your town" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/resets.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main-wrapper">
+      <nav class="nav-menu main-wrapper__nav-menu">
+        <ul class="nav-menu__list poppins">
+          <li class="nav-menu__item">Home</li>
+          <li class="nav-menu__item">Menu</li>
+          <li class="nav-menu__item">Contact</li>
+          <li class="nav-menu__item">Shop</li>
+          <li class="nav-menu__item">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search"
+              class="poppins"
+            />
+          </li>
+        </ul>
+      </nav>
+      <header class="header main-wrapper__header">
+        <div class="header__sub-title poppins">
+          <h2>Fast</h2>
+        </div>
+        <div class="header__title poppins">
+          <h1>
+            Food <br />
+            Delivery
+          </h1>
+        </div>
+        <div class="header__text poppins">
+          <p>
+            Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
+            doloremque laudantium
+          </p>
+        </div>
+      </header>
+      <section class="list-item-menu main-wrapper__item-menu-breakfast">
+        <span class="poppins">Breakfast</span>
+        <div class="list-item-menu__img-breakfast">
+          <!-- <img src="img/breakfast.png" alt="breakfast" /> -->
+        </div>
+      </section>
+      <section class="list-item-menu main-wrapper__item-menu-lunch">
+        <span class="poppins"> Lunch </span>
+        <div class="list-item-menu__img-lunch">
+          <!-- <img src="img/lunch.png" alt="lunch" /> -->
+        </div>
+      </section>
+      <section class="list-item-menu main-wrapper__item-menu-dinner">
+        <span class="poppins">Dinner</span>
+        <div class="list-item-menu__img-dinner">
+          <!-- <img src="img/dinner.png" alt="dinner" /> -->
+        </div>
+      </section>
+      <section class="description-menu main-wrapper__description-menu dm-sans">
+        <h3 class="description-menu__title dm-sans">French Onion Chicken</h3>
+        <ul class="ingredients description-menu__ingredients">
+          <li class="ingredients__item">Ingredients</li>
+          <li class="ingredients__item">1 tbsp olive oil</li>
+          <li class="ingredients__item">2 lbs chicken breasts</li>
+          <li class="ingredients__item">1/2 tsp kosher salt</li>
+          <li class="ingredients__item">1/2 tsp ground black pepper</li>
+          <li class="ingredients__item">
+            2 tbsp buttero <span>(if ordered).</span>
+          </li>
+        </ul>
+        <div class="size-portion description-menu__size-portion dm-sans">
+          <span class="acent">Size</span>
+          <p class="text-desription">Medium</p>
+        </div>
+        <div class="portion-energy description-menu__portion-energy dm-sans">
+          <span class="acent">Energy</span>
+          <p class="text-desription">554 KCal</p>
+        </div>
+        <div class="time-delivery description-menu__time-delivery dm-sans">
+          <span class="acent">Delivery</span>
+          <p class="text-desription">45 min</p>
+        </div>
+      </section>
+      <footer class="about-us main-wrapper__about-us">
+        <h3 class="about-us__title dm-serif">Kabeer UI UX designer</h3>
+        <p class="about-us__text dm-sans">About</p>
+        <p class="about-us__rating dm-sans">
+          <i class="fa-solid fa-star"></i>4.8<span class="about-us__counter"
+            >(41 Reviews)</span
+          >
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
