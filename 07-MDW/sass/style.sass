@@ -1,0 +1,2140 @@
+// ЗАГАЛЬНЕ
+// @import "resets.scss"
+@import "normalizez.scss"
+
+// Визначення кольорів
+$main-color:  #48555B
+$secondary-color: #fff
+$accent-color: #00A4E5
+$bg-color: #141a20
+
+@font-face
+  font-family: "BebasNeue"
+  src: url(../fonts/BebasNeueBold.otf)
+  font-display: swap
+  font-weight: 700
+  font-style: normal
+
+.open-sans
+  font-family: "Open Sans", sans-serif
+  font-optical-sizing: auto
+  font-style: normal
+
+*
+  box-sizing: border-box
+  font-family: "Open Sans", sans-serif
+
+
+h1,h2,h3,h4,h5,h6,p, ul, body
+  margin: 0
+
+
+
+
+
+.main-wrapper
+  display: grid
+  grid-template-columns: auto
+  grid-template-areas: "first-section" "our-story" "our-capabilities" "git" "footer"
+  &-first-section
+    grid-area: first-section
+
+    background: url(../img/first-bg.png) top/cover no-repeat
+    width: 100%
+    min-height: 93vh
+
+  &-our-story
+    grid-area: our-story
+
+    max-width: 66%
+    margin: 0 auto
+
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto 58px auto 58px auto 117px
+    grid-template-areas: "nav-bar nav-bar" ". ." "title title" ". ." "info about-us" ". ."
+
+  &-our-capabilities
+    grid-area: our-capabilities
+
+    max-width: 66%
+    margin: 0 auto
+
+    display: grid
+    grid-template-columns: auto
+    grid-template-rows: auto 76px auto 115px
+    grid-template-areas: "header" "." "cards" "."
+
+
+
+  &-git
+    grid-area: git
+
+    background: url(../img/second-bg.png) center/cover no-repeat
+    width: 100%
+
+  &-footer
+    grid-area: footer
+
+    background-color: $bg-color
+    width: 100%
+
+
+.first-section
+  &-wrapper
+    display: grid
+    grid-template-columns: auto
+    grid-template-rows: 41px auto 300px auto auto 200px auto 
+    grid-template-areas: "." "logo" "." "title" "text" "." "down-text"
+    max-width: 66%
+    margin: 0 auto
+
+    justify-items: center
+
+    color: $secondary-color
+
+  &-logo
+    grid-area: logo
+  &-title
+    grid-area: title
+
+    font-family: "BebasNeue"
+    font-size: 3.75rem
+    letter-spacing: 5.71px
+
+  &-text
+    grid-area: text
+    font-size: 1rem
+    font-weight: 600
+
+  &-down-text
+    grid-area: down-text
+
+    font-size: 0.7rem
+    font-weight: 600
+    letter-spacing: 5.71px
+
+.our-story
+  &-nav-bar
+    grid-area: nav-bar
+
+    display: grid
+    grid-template-columns: auto auto
+    grid-template-areas: "logo links"
+    justify-items: space-between
+    padding: 1rem 0
+
+    &-logo
+      grid-area: logo
+
+    &-links
+      grid-area: links
+       
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+      justify-self: end
+      align-content: normal
+      width: min-content
+      column-gap: 48px
+      list-style-type: none
+      padding: 0
+
+    &-link
+      text-decoration: none
+      color: $main-color
+      font-size: 12px
+      font-weight: 700
+      line-height: -1px
+      letter-spacing: 1.09px
+
+    &-link:hover
+      color: $accent-color
+      font-weight: 700
+
+
+  &-title
+    grid-area: title
+
+    font-size: 18px
+    font-weight: 700
+    line-height: -1px
+    letter-spacing: 2.31px
+    text-align: center
+    color: $main-color
+  &-title::after
+    content: ''
+    display: inline-block
+    position: relative
+    top: -5px
+    left: -5px
+    width: 50px
+    height: 2px
+    background-color: $accent-color
+    
+
+  &-info
+    grid-area: info
+    width: 75%
+
+    display: grid
+    grid-template-columns: auto
+    grid-template-areas: "sub-title" "text"
+    grid-row-gap: 30px
+  
+  &-sub-title
+    grid-area: sub-title
+
+    font-size: 20px
+    font-weight: 700
+    line-height: 23.44px
+    text-align: left
+
+  &-sub-title span
+    color: $accent-color
+  &-text
+    grid-area: text
+
+    font-size: 13px
+    font-weight: 400
+    line-height: 23px
+    letter-spacing: 0.19px
+    text-align: left
+
+  &-about-us
+    grid-area: about-us
+
+    display: grid
+
+    grid-template-columns: 1fr 1fr 1fr
+    grid-column-gap: 20px
+    justify-content: space-between
+    align-content: end
+
+  &-planing, &-manage, &-build
+    width: 100%
+    height: 220px
+    font-size: 2rem
+    font-weight: 900
+    line-height: 29px
+    letter-spacing: 0.19px
+    color: $secondary-color
+    padding: 15px 0 0 15px
+
+  &-planing
+    background: url(../img/plan.png) center/cover no-repeat
+
+  &-manage
+    background: url(../img/manage.png) center/cover no-repeat
+  &-build
+    background: url(../img/deliver.png) center/cover no-repeat
+
+.our-capabilities
+  // Заголовок
+  &-header
+    grid-area: header
+
+    display: grid
+    grid-template-columns: 2fr 3fr 1fr
+    grid-template-areas: "title text btn-link"
+    position: relative
+  &-title
+    grid-area: title
+
+    font-size: 18px
+    font-weight: 700
+    line-height: -1px
+    letter-spacing: 2.31px
+
+  &-title::before
+    content: ''
+    display: inline-block
+    position: absolute
+    top: 25px
+    width: 50px
+    height: 2px
+    background-color: $accent-color
+
+  &-text
+    grid-area: text
+
+    font-size: 11px
+    font-weight: 400
+    line-height: 19px
+    letter-spacing: 0.2px
+    
+  &-btn-link
+    grid-area: btn-link
+
+    font-size: 13px
+    font-weight: 700
+    line-height: 15.23px
+    text-align: center
+    text-decoration: none
+    color: $secondary-color
+    padding: 11px 29px
+    background-color: $accent-color
+  
+
+    // Картки
+  &-cards
+    grid-area: cards
+
+    display: grid
+
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "card-1 card-2 card-3"
+    grid-column-gap: 20px
+
+  &-card-1, &-card-2, &-card-3
+    display: grid
+
+    border: 1px solid #E6E6E6
+    grid-template-columns: auto
+    grid-template-rows: auto 25px auto 13px auto
+    grid-template-areas: "card-logo" "." "card-title" "." "card-text"
+    padding: 38px 22px
+    
+  &-card-1
+    grid-area: card-1
+  &-card-2
+    grid-area: card-2
+  &-card-3
+    grid-area: card-3
+  &-card-logo
+    grid-area: card-logo
+  &-card-title
+    grid-area: card-title
+
+    font-size: 16px
+    font-weight: 700
+    line-height: 24px
+    letter-spacing: 0.43px
+
+  &-card-text
+    grid-area: card-text
+
+    font-size: 13px
+    font-weight: 400
+    line-height: 23px
+    letter-spacing: 0.19px
+
+
+.git
+  &-wrapper
+    display: grid
+    grid-template-columns: auto
+    grid-template-rows: 120px auto 35px auto  231px
+    grid-template-areas: "." "title" "." "btn-link" "."
+    max-width: 24%
+    margin: 0 auto
+    justify-items: center
+    color: $main-color
+
+  &-title
+    grid-area: title
+
+    font-size: 30px
+    font-weight: 700
+    line-height: 36px
+    letter-spacing: 0.15px
+    text-align: center
+
+  &-btn-link
+    grid-area: btn-link
+
+    padding: 11px 26px
+    font-size: 13px
+    font-weight: 700
+    line-height: 15.23px
+    text-align: center
+    text-decoration: none
+    color: $secondary-color
+    padding: 11px 29px
+    background-color: $accent-color
+
+.footer
+  &-wrapper
+    display: grid
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr
+    grid-template-rows: auto 41px auto 49px auto
+    grid-template-areas: "form form form form form form" ". . . . . ." "contact-info contact-info contact-info contact-info contact-info contact-info" ". . . . . ." "copyright copyright copyright copyright copyright copyright"
+    max-width: 66%
+    margin: 0 auto
+  &-signup-form
+    grid-area: form
+    display: grid
+    grid-template-columns: auto auto
+    grid-template-areas: "title input-wrapper"
+    grid-column-gap: 70px
+    padding: 30px 0
+    justify-self: center
+    align-items: center
+
+    &-title
+      grid-area: title
+
+      font-size: 22px
+      font-weight: 700
+      line-height: -1px
+      letter-spacing: 0.85px
+      text-align: center
+      color: $secondary-color
+
+    &-input
+      padding: 11px 16px
+      border: 1px solid #979797
+      border-right: none
+      margin: 0
+
+      font-size: 14px
+      font-weight: 400
+      line-height: -1px
+      letter-spacing: 0.07px
+      color: $main-color
+
+    &-submitt-btn
+      padding: 11px 50px
+      border: none
+      background-color: $accent-color
+      color: $secondary-color
+
+      font-size: 13px
+      font-weight: 700
+      line-height: -1px
+      letter-spacing: 0.5px
+
+  &-input-wrapper
+    grid-area: input-wrapper
+    display: flex
+
+  &-info
+    grid-area: contact-info
+
+    display: grid
+    grid-template-columns: 1fr 70px 1fr 58px 1fr
+    grid-template-areas: "aubout-us . block-links . block-contact"
+    &-aubout-us
+      grid-area: aubout-us
+
+      display: grid
+      grid-template-rows: auto 19px auto 15px auto
+      grid-template-areas: "title" "." "logo" "." "text"
+
+      &-title
+        grid-area: title
+      &-title span
+        font-size: 11px
+        font-weight: 400
+        line-height: -1px
+        letter-spacing: 0.85px
+        color: $secondary-color
+      &-logo
+        grid-area: logo
+
+      &-text
+        grid-area: text
+
+      &-text p
+        font-size: 11px
+        font-weight: 400
+        line-height: 19px
+
+        color: $secondary-color
+  
+    &-block-links
+      grid-area: block-links
+
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      grid-template-rows: auto 10px auto
+      grid-template-areas: "title title title" ". . ." "first-block second-block third-block"
+      
+      &-title
+        grid-area: title
+
+        font-size: 11px
+        font-weight: 400
+        line-height: -1px
+        letter-spacing: 0.85px
+        color: $secondary-color
+      &-first ul, &-second ul, &-third ul
+        list-style-type: none
+        padding: 0
+
+      &-first a, &-second a, &-third a
+        text-decoration: none
+        color: $secondary-color
+
+        font-size: 11px
+        font-weight: 400
+        line-height: 25px
+        letter-spacing: 0.85px
+
+      &-first
+        grid-area: first-block
+
+      &-second
+        grid-area: second-block
+
+      &-third
+        grid-area: third-block
+
+
+
+    &-block-contact
+      grid-area: block-contact
+
+      display: grid
+      grid-template-columns: 1fr 46px 1fr
+      grid-template-areas: "contact-us . social"
+
+
+      &-us
+        grid-area: contact-us
+
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: auto auto auto auto
+        grid-row-gap: 10px
+
+        color: $secondary-color
+        font-size: 11px
+        font-weight: 400
+        line-height: 16px
+        letter-spacing: 0.85px
+        &-title
+          font-size: 11px
+          font-weight: 400
+          line-height: -1px
+          letter-spacing: 0.85px
+
+      &-us a
+        text-decoration: none
+        color: $secondary-color
+
+      &-social
+        grid-area: social
+
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-areas: "facebook twitter  google"
+        grid-row-gap: 25px
+
+        color: $secondary-color
+        &-facebook
+          grid-area: facebook
+        &-twitter
+          grid-area: twitter
+        &-google
+          grid-area: google
+
+
+  &-copyright
+    grid-area: copyright
+
+    padding: 24px 0
+    text-align: center
+    font-size: 11px
+    font-weight: 400
+    line-height: -1px
+    letter-spacing: 0.85px
+
+    color: $secondary-color
+
+
+
+
+
+@media (min-width: 821px) and (max-width: 1237px)
+  .main-wrapper
+    display: grid
+    grid-template-columns: auto
+    grid-template-areas: "first-section" "our-story" "our-capabilities" "git" "footer"
+    &-first-section
+      grid-area: first-section
+  
+      background: url(../img/first-bg.png) top/cover no-repeat
+      width: 100%
+      min-height: 93vh
+  
+    &-our-story
+      grid-area: our-story
+  
+      max-width: 66%
+      margin: 0 auto
+  
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: auto 58px auto 58px auto auto 117px
+      grid-template-areas: "nav-bar nav-bar" ". ." "title title" ". ." "info info" "about-us about-us" ". ."
+  
+    &-our-capabilities
+      grid-area: our-capabilities
+  
+      max-width: 66%
+      margin: 0 auto
+  
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: auto 76px auto 115px
+      grid-template-areas: "header" "." "cards" "."
+  
+  
+  
+    &-git
+      grid-area: git
+  
+      background: url(../img/second-bg.png) center/cover no-repeat
+      width: 100%
+  
+    &-footer
+      grid-area: footer
+  
+      background-color: $bg-color
+      width: 100%
+  
+  
+  .first-section
+    &-wrapper
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: 41px auto 300px auto auto 55vh auto 
+      grid-template-areas: "." "logo" "." "title" "text" "." "down-text"
+      max-width: 66%
+      margin: 0 auto
+  
+      justify-items: center
+  
+      color: $secondary-color
+  
+    &-logo
+      grid-area: logo
+    &-title
+      grid-area: title
+  
+      font-family: "BebasNeue"
+      font-size: 2.75rem
+      letter-spacing: 5.71px
+  
+    &-text
+      grid-area: text
+      font-size: 1rem
+      font-weight: 600
+  
+    &-down-text
+      grid-area: down-text
+  
+      font-size: 0.7rem
+      font-weight: 600
+      letter-spacing: 5.71px
+  
+  .our-story
+    &-nav-bar
+      grid-area: nav-bar
+  
+      display: grid
+      grid-template-columns: auto auto
+      grid-template-areas: "logo links"
+      padding: 1rem 0
+  
+      &-logo
+        grid-area: logo
+  
+      &-links
+        grid-area: links
+         
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+        justify-self: end
+        align-content: normal
+        width: min-content
+        column-gap: 48px
+        list-style-type: none
+        padding: 0
+  
+      &-link
+        text-decoration: none
+        color: $main-color
+        font-size: 12px
+        font-weight: 700
+        line-height: -1px
+        letter-spacing: 1.09px
+  
+      &-link:hover
+        color: $accent-color
+        font-weight: 700
+  
+  
+    &-title
+      grid-area: title
+  
+      font-size: 18px
+      font-weight: 700
+      line-height: -1px
+      letter-spacing: 2.31px
+      text-align: center
+      color: $main-color
+
+    &-title::after
+      content: ''
+      display: inline-block
+      position: relative
+      top: -5px
+      left: -5px
+      width: 50px
+      height: 2px
+      background-color: $accent-color
+      
+  
+    &-info
+      grid-area: info
+      width: 75%
+  
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: auto auto auto
+      grid-template-areas: "sub-title" "text"
+      grid-row-gap: 30px
+      justify-self: center
+    
+    &-sub-title
+      grid-area: sub-title
+  
+      font-size: 20px
+      font-weight: 700
+      line-height: 23.44px
+      text-align: left
+  
+    &-sub-title span
+      color: $accent-color
+    &-text
+      grid-area: text
+  
+      font-size: 13px
+      font-weight: 400
+      line-height: 23px
+      letter-spacing: 0.19px
+      text-align: left
+  
+    &-about-us
+      grid-area: about-us
+  
+      display: grid
+  
+      grid-template-columns: 1fr 1fr 1fr
+      grid-column-gap: 20px
+      justify-content: space-between
+      align-content: end
+  
+    &-planing, &-manage, &-build
+      width: 100%
+      height: 220px
+      font-size: 2rem
+      font-weight: 900
+      line-height: 29px
+      letter-spacing: 0.19px
+      color: $secondary-color
+      padding: 15px 0 0 15px
+  
+    &-planing
+      background: url(../img/plan.png) center/cover no-repeat
+  
+    &-manage
+      background: url(../img/manage.png) center/cover no-repeat
+    &-build
+      background: url(../img/deliver.png) center/cover no-repeat
+  
+
+  .our-capabilities
+    // Заголовок
+    &-header
+      grid-area: header
+  
+      display: grid
+      grid-template-columns: 3fr 1fr
+      grid-template-rows: auto auto
+      grid-template-areas: "title title" "text btn-link"
+      grid-row-gap: 20px
+      position: relative
+
+    &-title
+      grid-area: title
+  
+      font-size: 18px
+      font-weight: 700
+      line-height: -1px
+      letter-spacing: 2.31px
+      justify-self: center
+  
+    &-title::before
+      content: ''
+      display: inline-block
+      position: absolute
+      top: 25px
+      width: 50px
+      height: 2px
+      background-color: $accent-color
+  
+    &-text
+      grid-area: text
+  
+      font-size: 11px
+      font-weight: 400
+      line-height: 19px
+      letter-spacing: 0.2px
+      
+    &-btn-link
+      grid-area: btn-link
+  
+      font-size: 13px
+      font-weight: 700
+      line-height: 15.23px
+      text-align: center
+      text-decoration: none
+      color: $secondary-color
+      padding: 11px 29px
+      background-color: $accent-color
+    
+  
+      // Картки
+    &-cards
+      grid-area: cards
+  
+      display: grid
+  
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: auto auto
+      grid-template-areas: "card-1 card-2" "card-3 card-3"
+      grid-column-gap: 20px
+      grid-row-gap: 20px
+
+    &-card-1, &-card-2, &-card-3
+      display: grid
+  
+      border: 1px solid #E6E6E6
+      grid-template-columns: auto
+      grid-template-rows: auto 25px auto 13px auto
+      grid-template-areas: "card-logo" "." "card-title" "." "card-text"
+      padding: 38px 22px
+      
+    &-card-1
+      grid-area: card-1
+    &-card-2
+      grid-area: card-2
+    &-card-3
+      grid-area: card-3
+      width: 50% 
+      justify-self: center
+    &-card-logo
+      grid-area: card-logo
+    &-card-title
+      grid-area: card-title
+  
+      font-size: 16px
+      font-weight: 700
+      line-height: 24px
+      letter-spacing: 0.43px
+  
+    &-card-text
+      grid-area: card-text
+  
+      font-size: 13px
+      font-weight: 400
+      line-height: 23px
+      letter-spacing: 0.19px
+  
+  
+  .git
+    &-wrapper
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: 120px auto 35px auto  231px
+      grid-template-areas: "." "title" "." "btn-link" "."
+      max-width: 34%
+      margin: 0 auto
+      justify-items: center
+      color: $main-color
+  
+    &-title
+      grid-area: title
+  
+      font-size: 30px
+      font-weight: 700
+      line-height: 36px
+      letter-spacing: 0.15px
+      text-align: center
+  
+    &-btn-link
+      grid-area: btn-link
+  
+      padding: 11px 26px
+      font-size: 13px
+      font-weight: 700
+      line-height: 15.23px
+      text-align: center
+      text-decoration: none
+      color: $secondary-color
+      padding: 11px 29px
+      background-color: $accent-color
+  
+  .footer
+    &-wrapper
+      display: grid
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr
+      grid-template-rows: auto 1rem auto 1rem auto
+      grid-template-areas: "form form form form form form" ". . . . . ." "contact-info contact-info contact-info contact-info contact-info contact-info" ". . . . . ." "copyright copyright copyright copyright copyright copyright"
+      max-width: 66%
+      margin: 0 auto
+    &-signup-form
+      grid-area: form
+      display: grid
+      grid-template-columns: auto
+      grid-template-areas: "title" "input-wrapper"
+      grid-row-gap: 1rem
+      padding: 30px 0
+      justify-self: center
+      align-items: center
+  
+      &-title
+        grid-area: title
+  
+        font-size: 22px
+        font-weight: 700
+        line-height: -1px
+        letter-spacing: 0.85px
+        text-align: center
+        color: $secondary-color
+  
+      &-input
+        padding: 11px 16px
+        border: 1px solid #979797
+        border-right: none
+        margin: 0
+  
+        font-size: 14px
+        font-weight: 400
+        line-height: -1px
+        letter-spacing: 0.07px
+        color: $main-color
+  
+      &-submitt-btn
+        padding: 11px 50px
+        border: none
+        background-color: $accent-color
+        color: $secondary-color
+  
+        font-size: 13px
+        font-weight: 700
+        line-height: -1px
+        letter-spacing: 0.5px
+  
+    &-input-wrapper
+      grid-area: input-wrapper
+      display: flex
+  
+    &-info
+      grid-area: contact-info
+  
+      display: grid
+      grid-template-columns:  1fr 58px 1fr
+      grid-template-rows: auto 2rem auto
+      grid-template-areas: "aubout-us aubout-us aubout-us" ". . ." "block-links . block-contact"
+      &-aubout-us
+        grid-area: aubout-us
+  
+        display: grid
+        grid-template-rows: auto 19px auto 15px auto
+        grid-template-areas: "title" "." "logo" "." "text"
+  
+        &-title
+          grid-area: title
+        &-title span
+          font-size: 11px
+          font-weight: 400
+          line-height: -1px
+          letter-spacing: 0.85px
+          color: $secondary-color
+        &-logo
+          grid-area: logo
+  
+        &-text
+          grid-area: text
+  
+        &-text p
+          font-size: 11px
+          font-weight: 400
+          line-height: 19px
+  
+          color: $secondary-color
+    
+      &-block-links
+        grid-area: block-links
+  
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: auto 10px auto
+        grid-template-areas: "title title title" ". . ." "first-block second-block third-block"
+        
+        &-title
+          grid-area: title
+  
+          font-size: 11px
+          font-weight: 400
+          line-height: -1px
+          letter-spacing: 0.85px
+          color: $secondary-color
+        &-first ul, &-second ul, &-third ul
+          list-style-type: none
+          padding: 0
+  
+        &-first a, &-second a, &-third a
+          text-decoration: none
+          color: $secondary-color
+  
+          font-size: 11px
+          font-weight: 400
+          line-height: 25px
+          letter-spacing: 0.85px
+  
+        &-first
+          grid-area: first-block
+  
+        &-second
+          grid-area: second-block
+  
+        &-third
+          grid-area: third-block
+  
+  
+  
+      &-block-contact
+        grid-area: block-contact
+  
+        display: grid
+        grid-template-columns: 1fr 46px 1fr
+        grid-template-areas: "contact-us . social"
+  
+  
+        &-us
+          grid-area: contact-us
+  
+          display: grid
+          grid-template-columns: 1fr
+          grid-template-rows: auto auto auto auto
+          grid-row-gap: 10px
+  
+          color: $secondary-color
+          font-size: 11px
+          font-weight: 400
+          line-height: 16px
+          letter-spacing: 0.85px
+          &-title
+            font-size: 11px
+            font-weight: 400
+            line-height: -1px
+            letter-spacing: 0.85px
+  
+        &-us a
+          text-decoration: none
+          color: $secondary-color
+  
+        &-social
+          grid-area: social
+  
+          display: grid
+          grid-template-columns: 1fr 1fr 1fr
+          grid-template-areas: "facebook twitter  google"
+          grid-row-gap: 25px
+  
+          color: $secondary-color
+          &-facebook
+            grid-area: facebook
+          &-twitter
+            grid-area: twitter
+          &-google
+            grid-area: google
+  
+  
+    &-copyright
+      grid-area: copyright
+  
+      padding: 24px 0
+      text-align: center
+      font-size: 11px
+      font-weight: 400
+      line-height: -1px
+      letter-spacing: 0.85px
+  
+      color: $secondary-color
+  
+
+@media (min-width: 689px) and (max-width: 820px)
+  .main-wrapper
+    display: grid
+    grid-template-columns: auto
+    grid-template-areas: "first-section" "our-story" "our-capabilities" "git" "footer"
+    &-first-section
+      grid-area: first-section
+  
+      background: url(../img/first-bg.png) top/cover no-repeat
+      width: 100%
+      min-height: 93vh
+  
+    &-our-story
+      grid-area: our-story
+  
+      max-width: 66%
+      margin: 0 auto
+  
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: auto 58px auto 58px auto auto 117px
+      grid-template-areas: "nav-bar nav-bar" ". ." "title title" ". ." "info info" "about-us about-us" ". ."
+  
+    &-our-capabilities
+      grid-area: our-capabilities
+  
+      max-width: 66%
+      margin: 0 auto
+  
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: auto 76px auto 115px
+      grid-template-areas: "header" "." "cards" "."
+  
+  
+  
+    &-git
+      grid-area: git
+  
+      background: url(../img/second-bg.png) center/cover no-repeat
+      width: 100%
+  
+    &-footer
+      grid-area: footer
+  
+      background-color: $bg-color
+      width: 100%
+  
+  
+  .first-section
+    &-wrapper
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: 41px auto 300px auto auto 55vh auto 
+      grid-template-areas: "." "logo" "." "title" "text" "." "down-text"
+      max-width: 66%
+      margin: 0 auto
+  
+      justify-items: center
+  
+      color: $secondary-color
+  
+    &-logo
+      grid-area: logo
+    &-title
+      grid-area: title
+  
+      font-family: "BebasNeue"
+      font-size: 2.75rem
+      letter-spacing: 5.71px
+  
+    &-text
+      grid-area: text
+      font-size: 1rem
+      font-weight: 600
+  
+    &-down-text
+      grid-area: down-text
+  
+      font-size: 0.7rem
+      font-weight: 600
+      letter-spacing: 5.71px
+  
+  .our-story
+    &-nav-bar
+      grid-area: nav-bar
+  
+      display: grid
+      grid-template-columns: auto
+      grid-row-gap: 1rem 
+      grid-template-areas: "logo" "links"
+      padding: 1rem 0
+  
+      &-logo
+        grid-area: logo
+  
+      &-links
+        grid-area: links
+         
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+        justify-self: end
+        align-content: normal
+        width: min-content
+        column-gap: 48px
+        list-style-type: none
+        padding: 0
+  
+      &-link
+        text-decoration: none
+        color: $main-color
+        font-size: 12px
+        font-weight: 700
+        line-height: -1px
+        letter-spacing: 1.09px
+  
+      &-link:hover
+        color: $accent-color
+        font-weight: 700
+  
+  
+    &-title
+      grid-area: title
+  
+      font-size: 18px
+      font-weight: 700
+      line-height: -1px
+      letter-spacing: 2.31px
+      text-align: center
+      color: $main-color
+
+    &-title::after
+      content: ''
+      display: inline-block
+      position: relative
+      top: -5px
+      left: -5px
+      width: 50px
+      height: 2px
+      background-color: $accent-color
+      
+  
+    &-info
+      grid-area: info
+      width: 75%
+  
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: auto auto auto
+      grid-template-areas: "sub-title" "text"
+      grid-row-gap: 30px
+      justify-self: center
+    
+    &-sub-title
+      grid-area: sub-title
+  
+      font-size: 20px
+      font-weight: 700
+      line-height: 23.44px
+      text-align: left
+  
+    &-sub-title span
+      color: $accent-color
+    &-text
+      grid-area: text
+  
+      font-size: 13px
+      font-weight: 400
+      line-height: 23px
+      letter-spacing: 0.19px
+      text-align: left
+  
+    &-about-us
+      grid-area: about-us
+  
+      display: grid
+  
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: auto auto
+      grid-template-areas: "planing manage" "build build"
+      grid-row-gap: 1rem
+      grid-column-gap: 1rem
+      align-content: end
+  
+    &-planing, &-manage, &-build
+      width: 100%
+      height: 220px
+      font-size: 2rem
+      font-weight: 900
+      line-height: 29px
+      letter-spacing: 0.19px
+      color: $secondary-color
+      padding: 15px 0 0 15px
+  
+    &-planing
+      grid-area: planing
+      background: url(../img/plan.png) center/cover no-repeat
+  
+    &-manage
+      grid-area: manage
+      background: url(../img/manage.png) center/cover no-repeat
+
+    &-build
+      grid-area: build
+      justify-self: center
+      width: 50%
+      background: url(../img/deliver.png) center/cover no-repeat
+
+  
+
+  .our-capabilities
+    // Заголовок
+    &-header
+      grid-area: header
+  
+      display: grid
+      grid-template-columns: 3fr 1fr
+      grid-template-rows: auto auto
+      grid-template-areas: "title title" "text btn-link"
+      grid-row-gap: 20px
+      position: relative
+
+    &-title
+      grid-area: title
+  
+      font-size: 18px
+      font-weight: 700
+      line-height: -1px
+      letter-spacing: 2.31px
+      justify-self: center
+  
+    &-title::before
+      content: ''
+      display: inline-block
+      position: absolute
+      top: 25px
+      width: 50px
+      height: 2px
+      background-color: $accent-color
+  
+    &-text
+      grid-area: text
+  
+      font-size: 11px
+      font-weight: 400
+      line-height: 19px
+      letter-spacing: 0.2px
+      
+    &-btn-link
+      grid-area: btn-link
+  
+      font-size: 13px
+      font-weight: 700
+      line-height: 15.23px
+      text-align: center
+      text-decoration: none
+      color: $secondary-color
+      padding: 11px 29px
+      background-color: $accent-color
+    
+  
+      // Картки
+    &-cards
+      grid-area: cards
+  
+      display: grid
+  
+      grid-template-columns: 1fr
+      grid-template-areas: "card-1" "card-2" "card-3"
+      justify-self: center
+      width: 70%
+      grid-row-gap: 20px
+
+    &-card-1, &-card-2, &-card-3
+      display: grid
+  
+      border: 1px solid #E6E6E6
+      grid-template-columns: auto
+      grid-template-rows: auto 25px auto 13px auto
+      grid-template-areas: "card-logo" "." "card-title" "." "card-text"
+      padding: 38px 22px
+      
+    &-card-1
+      grid-area: card-1
+    &-card-2
+      grid-area: card-2
+    &-card-3
+      grid-area: card-3
+    &-card-logo
+      grid-area: card-logo
+    &-card-title
+      grid-area: card-title
+  
+      font-size: 16px
+      font-weight: 700
+      line-height: 24px
+      letter-spacing: 0.43px
+  
+    &-card-text
+      grid-area: card-text
+  
+      font-size: 13px
+      font-weight: 400
+      line-height: 23px
+      letter-spacing: 0.19px
+  
+  
+  .git
+    &-wrapper
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: 120px auto 35px auto  231px
+      grid-template-areas: "." "title" "." "btn-link" "."
+      max-width: 34%
+      margin: 0 auto
+      justify-items: center
+      color: $main-color
+  
+    &-title
+      grid-area: title
+  
+      font-size: 30px
+      font-weight: 700
+      line-height: 36px
+      letter-spacing: 0.15px
+      text-align: center
+  
+    &-btn-link
+      grid-area: btn-link
+  
+      padding: 11px 26px
+      font-size: 13px
+      font-weight: 700
+      line-height: 15.23px
+      text-align: center
+      text-decoration: none
+      color: $secondary-color
+      padding: 11px 29px
+      background-color: $accent-color
+  
+  .footer
+    &-wrapper
+      display: grid
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr
+      grid-template-rows: auto 1rem auto 1rem auto
+      grid-template-areas: "form form form form form form" ". . . . . ." "contact-info contact-info contact-info contact-info contact-info contact-info" ". . . . . ." "copyright copyright copyright copyright copyright copyright"
+      max-width: 66%
+      margin: 0 auto
+    &-signup-form
+      grid-area: form
+      display: grid
+      grid-template-columns: auto
+      grid-template-areas: "title" "input-wrapper"
+      grid-row-gap: 1rem
+      padding: 30px 0
+      justify-self: center
+      align-items: center
+  
+      &-title
+        grid-area: title
+  
+        font-size: 22px
+        font-weight: 700
+        line-height: -1px
+        letter-spacing: 0.85px
+        text-align: center
+        color: $secondary-color
+  
+      &-input
+        padding: 11px 16px
+        border: 1px solid #979797
+        border-right: none
+        margin: 0
+  
+        font-size: 14px
+        font-weight: 400
+        line-height: -1px
+        letter-spacing: 0.07px
+        color: $main-color
+  
+      &-submitt-btn
+        padding: 11px 50px
+        border: none
+        background-color: $accent-color
+        color: $secondary-color
+  
+        font-size: 13px
+        font-weight: 700
+        line-height: -1px
+        letter-spacing: 0.5px
+  
+    &-input-wrapper
+      grid-area: input-wrapper
+      display: flex
+  
+    &-info
+      grid-area: contact-info
+  
+      display: grid
+      grid-template-columns:  1fr 58px 1fr
+      grid-template-rows: auto 1.5rem auto 1.5rem auto
+      grid-template-areas: "aubout-us aubout-us aubout-us" ". . ." "block-links block-links block-links" ". . ." "block-contact block-contact block-contact"
+      &-aubout-us
+        grid-area: aubout-us
+  
+        display: grid
+        grid-template-rows: auto 19px auto 15px auto
+        grid-template-areas: "title" "." "logo" "." "text"
+  
+        &-title
+          grid-area: title
+        &-title span
+          font-size: 11px
+          font-weight: 400
+          line-height: -1px
+          letter-spacing: 0.85px
+          color: $secondary-color
+        &-logo
+          grid-area: logo
+  
+        &-text
+          grid-area: text
+  
+        &-text p
+          font-size: 11px
+          font-weight: 400
+          line-height: 19px
+  
+          color: $secondary-color
+    
+      &-block-links
+        grid-area: block-links
+  
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: auto 10px auto
+        grid-template-areas: "title title title" ". . ." "first-block second-block third-block"
+        
+        &-title
+          grid-area: title
+  
+          font-size: 11px
+          font-weight: 400
+          line-height: -1px
+          letter-spacing: 0.85px
+          color: $secondary-color
+        &-first ul, &-second ul, &-third ul
+          list-style-type: none
+          padding: 0
+  
+        &-first a, &-second a, &-third a
+          text-decoration: none
+          color: $secondary-color
+  
+          font-weight: 400
+          line-height: 25px
+          letter-spacing: 0.85px
+  
+        &-first
+          grid-area: first-block
+  
+        &-second
+          grid-area: second-block
+  
+        &-third
+          grid-area: third-block
+  
+  
+  
+      &-block-contact
+        grid-area: block-contact
+  
+        display: grid
+        grid-template-columns: 1fr 46px 1fr
+        grid-template-areas: "contact-us . social"
+  
+  
+        &-us
+          grid-area: contact-us
+  
+          display: grid
+          grid-template-columns: 1fr
+          grid-template-rows: auto auto auto auto
+          grid-row-gap: 10px
+  
+          color: $secondary-color
+          font-size: 11px
+          font-weight: 400
+          line-height: 16px
+          letter-spacing: 0.85px
+          &-title
+            font-size: 11px
+            font-weight: 400
+            line-height: -1px
+            letter-spacing: 0.85px
+  
+        &-us a
+          text-decoration: none
+          color: $secondary-color
+  
+        &-social
+          grid-area: social
+  
+          display: grid
+          grid-template-columns: 1fr 1fr 1fr
+          grid-template-areas: "facebook twitter  google"
+          grid-row-gap: 25px
+
+          align-content: center
+  
+          color: $secondary-color
+          &-facebook
+            grid-area: facebook
+          &-twitter
+            grid-area: twitter
+          &-google
+            grid-area: google
+  
+  
+    &-copyright
+      grid-area: copyright
+  
+      padding: 24px 0
+      text-align: center
+      font-size: 11px
+      font-weight: 400
+      line-height: -1px
+      letter-spacing: 0.85px
+  
+      color: $secondary-color
+  
+
+@media (min-width: 320px) and (max-width: 688px)
+  .main-wrapper
+    display: grid
+    grid-template-columns: auto
+    grid-template-areas: "first-section" "our-story" "our-capabilities" "git" "footer"
+    &-first-section
+      grid-area: first-section
+  
+      background: url(../img/first-bg.png) top/cover no-repeat
+      width: 100%
+      min-height: 93vh
+  
+    &-our-story
+      grid-area: our-story
+  
+      max-width: 80%
+      margin: 0 auto
+  
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: auto 58px auto 58px auto auto 117px
+      grid-template-areas: "nav-bar nav-bar" ". ." "title title" ". ." "info info" "about-us about-us" ". ."
+  
+    &-our-capabilities
+      grid-area: our-capabilities
+  
+      max-width: 80%
+      margin: 0 auto
+  
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: auto 76px auto 115px
+      grid-template-areas: "header" "." "cards" "."
+  
+  
+  
+    &-git
+      grid-area: git
+  
+      background: url(../img/second-bg.png) center/cover no-repeat
+      width: 100%
+  
+    &-footer
+      grid-area: footer
+  
+      background-color: $bg-color
+      width: 100%
+  
+  
+  .first-section
+    &-wrapper
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: 41px auto 100px auto auto 30vh auto 
+      grid-template-areas: "." "logo" "." "title" "text" "." "down-text"
+      max-width: 80%
+      margin: 0 auto
+  
+      justify-items: center
+  
+      color: $secondary-color
+  
+    &-logo
+      grid-area: logo
+    &-title
+      grid-area: title
+  
+      text-align: center
+      font-family: "BebasNeue"
+      font-size: 2.75rem
+      letter-spacing: 5.71px
+  
+    &-text
+      grid-area: text
+      font-size: 1rem
+      font-weight: 600
+      text-align: center
+  
+    &-down-text
+      grid-area: down-text
+  
+      font-size: 0.7rem
+      font-weight: 600
+      letter-spacing: 5.71px
+  
+  .our-story
+    &-nav-bar
+      grid-area: nav-bar
+  
+      display: grid
+      grid-template-columns: auto
+      grid-row-gap: 1rem 
+      grid-template-areas: "logo" "links"
+      padding: 1rem 0
+  
+      &-logo
+        grid-area: logo
+
+        justify-self: center
+  
+      &-links
+        grid-area: links
+         
+        display: grid
+        grid-template-columns: 1fr 1fr
+        justify-self: end
+        align-content: normal
+        width: min-content
+        column-gap: 48px
+        row-gap: 1rem
+        justify-self: center
+
+        list-style-type: none
+        padding: 0
+  
+      &-link
+        text-decoration: none
+        color: $main-color
+        font-size: 12px
+        font-weight: 700
+        line-height: -1px
+        letter-spacing: 1.09px
+  
+      &-link:hover
+        color: $accent-color
+        font-weight: 700
+  
+  
+    &-title
+      grid-area: title
+  
+      font-size: 18px
+      font-weight: 700
+      line-height: -1px
+      letter-spacing: 2.31px
+      text-align: center
+      color: $main-color
+
+    &-title::after
+      content: ''
+      display: inline-block
+      position: relative
+      top: -5px
+      left: -5px
+      width: 50px
+      height: 2px
+      background-color: $accent-color
+      
+  
+    &-info
+      grid-area: info
+      width: 75%
+  
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: auto auto auto
+      grid-template-areas: "sub-title" "text"
+      grid-row-gap: 30px
+      justify-self: center
+    
+    &-sub-title
+      grid-area: sub-title
+  
+      font-size: 20px
+      font-weight: 700
+      line-height: 23.44px
+      text-align: center
+  
+    &-sub-title span
+      color: $accent-color
+    &-text
+      grid-area: text
+  
+      font-size: 13px
+      font-weight: 400
+      line-height: 23px
+      letter-spacing: 0.19px
+      text-align: center
+  
+    &-about-us
+      grid-area: about-us
+  
+      display: grid
+  
+      grid-template-columns: 1fr
+      grid-template-rows: auto auto auto
+      grid-template-areas: "planing" "manage" "build"
+      grid-row-gap: 1rem
+      align-content: end
+  
+    &-planing, &-manage, &-build
+      width: 100%
+      height: 220px
+      font-size: 2rem
+      font-weight: 900
+      line-height: 29px
+      letter-spacing: 0.19px
+      color: $secondary-color
+      padding: 15px 0 0 15px
+  
+    &-planing
+      grid-area: planing
+      background: url(../img/plan.png) center/cover no-repeat
+  
+    &-manage
+      grid-area: manage
+      background: url(../img/manage.png) center/cover no-repeat
+
+    &-build
+      grid-area: build
+      background: url(../img/deliver.png) center/cover no-repeat
+
+  
+
+  .our-capabilities
+    // Заголовок
+    &-header
+      grid-area: header
+  
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: auto auto auto
+      grid-template-areas: "title" "text" "btn-link"
+      grid-row-gap: 20px
+      position: relative
+
+    &-title
+      grid-area: title
+  
+      font-size: 18px
+      font-weight: 700
+      line-height: -1px
+      letter-spacing: 2.31px
+      justify-self: center
+  
+    &-title::before
+      content: ''
+      display: inline-block
+      position: absolute
+      top: 25px
+      width: 50px
+      height: 2px
+      background-color: $accent-color
+  
+    &-text
+      grid-area: text
+  
+      font-size: 11px
+      font-weight: 400
+      line-height: 19px
+      letter-spacing: 0.2px
+      text-align: center
+      
+    &-btn-link
+      grid-area: btn-link
+  
+      font-size: 13px
+      font-weight: 700
+      line-height: 15.23px
+      text-align: center
+      text-decoration: none
+      color: $secondary-color
+      padding: 11px 29px
+      background-color: $accent-color
+    
+  
+      // Картки
+    &-cards
+      grid-area: cards
+  
+      display: grid
+  
+      grid-template-columns: 1fr
+      grid-template-areas: "card-1" "card-2" "card-3"
+      justify-self: center
+      grid-row-gap: 20px
+
+    &-card-1, &-card-2, &-card-3
+      display: grid
+  
+      border: 1px solid #E6E6E6
+      grid-template-columns: auto
+      grid-template-rows: auto 25px auto 13px auto
+      grid-template-areas: "card-logo" "." "card-title" "." "card-text"
+      padding: 38px 22px
+      
+    &-card-1
+      grid-area: card-1
+    &-card-2
+      grid-area: card-2
+    &-card-3
+      grid-area: card-3
+    &-card-logo
+      grid-area: card-logo
+    &-card-title
+      grid-area: card-title
+  
+      font-size: 16px
+      font-weight: 700
+      line-height: 24px
+      letter-spacing: 0.43px
+  
+    &-card-text
+      grid-area: card-text
+  
+      font-size: 13px
+      font-weight: 400
+      line-height: 23px
+      letter-spacing: 0.19px
+  
+  
+  .git
+    &-wrapper
+      display: grid
+      grid-template-columns: auto
+      grid-template-rows: 120px auto 35px auto  231px
+      grid-template-areas: "." "title" "." "btn-link" "."
+      max-width: 70%
+      margin: 0 auto
+      justify-items: center
+      color: $main-color
+  
+    &-title
+      grid-area: title
+  
+      font-size: 30px
+      font-weight: 700
+      line-height: 36px
+      letter-spacing: 0.15px
+      text-align: center
+  
+    &-btn-link
+      grid-area: btn-link
+  
+      padding: 11px 26px
+      font-size: 13px
+      font-weight: 700
+      line-height: 15.23px
+      text-align: center
+      text-decoration: none
+      color: $secondary-color
+      padding: 11px 29px
+      background-color: $accent-color
+  
+  .footer
+    &-wrapper
+      display: grid
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr
+      grid-template-rows: auto 1rem auto 1rem auto
+      grid-template-areas: "form form form form form form" ". . . . . ." "contact-info contact-info contact-info contact-info contact-info contact-info" ". . . . . ." "copyright copyright copyright copyright copyright copyright"
+      max-width: 80%
+      margin: 0 auto
+    &-signup-form
+      grid-area: form
+      display: grid
+      grid-template-columns: auto
+      grid-template-areas: "title" "input-wrapper"
+      grid-row-gap: 1rem
+      padding: 30px 0
+      justify-self: center
+      align-items: center
+  
+      &-title
+        grid-area: title
+  
+        font-size: 22px
+        font-weight: 700
+        line-height: -1px
+        letter-spacing: 0.85px
+        text-align: center
+        color: $secondary-color
+  
+      &-input
+        padding: 11px 16px
+        border: 1px solid #979797
+        border-right: none
+        margin: 0
+  
+        font-size: 14px
+        font-weight: 400
+        line-height: -1px
+        letter-spacing: 0.07px
+        color: $main-color
+  
+      &-submitt-btn
+        padding: 11px 50px
+        border: none
+        background-color: $accent-color
+        color: $secondary-color
+  
+        font-size: 13px
+        font-weight: 700
+        line-height: -1px
+        letter-spacing: 0.5px
+  
+    &-input-wrapper
+      grid-area: input-wrapper
+      display: flex
+      flex-direction: column
+      row-gap: 1rem
+  
+    &-info
+      grid-area: contact-info
+  
+      display: grid
+      grid-template-columns:  1fr 58px 1fr
+      grid-template-rows: auto 1.5rem auto 1.5rem auto
+      grid-template-areas: "aubout-us aubout-us aubout-us" ". . ." "block-links block-links block-links" ". . ." "block-contact block-contact block-contact"
+      &-aubout-us
+        grid-area: aubout-us
+  
+        display: grid
+        grid-template-rows: auto 19px auto 15px auto
+        grid-template-areas: "title" "." "logo" "." "text"
+  
+        &-title
+          grid-area: title
+        &-title span
+          font-size: 11px
+          font-weight: 400
+          line-height: -1px
+          letter-spacing: 0.85px
+          color: $secondary-color
+        &-logo
+          grid-area: logo
+  
+        &-text
+          grid-area: text
+  
+        &-text p
+          font-size: 11px
+          font-weight: 400
+          line-height: 19px
+  
+          color: $secondary-color
+    
+      &-block-links
+        grid-area: block-links
+  
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: auto 10px auto
+        grid-template-areas: "title title title" ". . ." "first-block second-block third-block"
+        
+        &-title
+          grid-area: title
+  
+          font-size: 11px
+          font-weight: 400
+          line-height: -1px
+          letter-spacing: 0.85px
+          color: $secondary-color
+        &-first ul, &-second ul, &-third ul
+          list-style-type: none
+          padding: 0
+  
+        &-first a, &-second a, &-third a
+          text-decoration: none
+          color: $secondary-color
+  
+          font-weight: 400
+          line-height: 25px
+          letter-spacing: 0.85px
+  
+        &-first
+          grid-area: first-block
+  
+        &-second
+          grid-area: second-block
+  
+        &-third
+          grid-area: third-block
+  
+  
+  
+      &-block-contact
+        grid-area: block-contact
+  
+        display: grid
+        grid-template-columns: 1fr 46px 1fr
+        grid-template-areas: "contact-us . social"
+  
+  
+        &-us
+          grid-area: contact-us
+  
+          display: grid
+          grid-template-columns: 1fr
+          grid-template-rows: auto auto auto auto
+          grid-row-gap: 10px
+  
+          color: $secondary-color
+          font-size: 11px
+          font-weight: 400
+          line-height: 16px
+          letter-spacing: 0.85px
+          &-title
+            font-size: 11px
+            font-weight: 400
+            line-height: -1px
+            letter-spacing: 0.85px
+  
+        &-us a
+          text-decoration: none
+          color: $secondary-color
+  
+        &-social
+          grid-area: social
+  
+          display: grid
+          grid-template-columns: 1fr
+          grid-template-rows: auto auto auto
+          grid-template-areas: "facebook" "twitter"  "google"
+          grid-row-gap: 25px
+
+          align-content: center
+          justify-self: center
+  
+          color: $secondary-color
+          &-facebook
+            grid-area: facebook
+          &-twitter
+            grid-area: twitter
+          &-google
+            grid-area: google
+  
+  
+    &-copyright
+      grid-area: copyright
+  
+      padding: 24px 0
+      text-align: center
+      font-size: 11px
+      font-weight: 400
+      line-height: -1px
+      letter-spacing: 0.85px
+  
+      color: $secondary-color
