@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"// ЗАГАЛЬНЕ\n// @import \"resets.scss\"\n// @import \"normalizez.scss\"\n\n$main-color:  #fff;\n$accent-color: #000;\n$bg-color: #668E68;\n\n.background-fill {\n    background-color: $bg-color !important; }\n"
+	],
+	"names": [],
+	"mappings": ";AAQA,AAAA,gBAAgB,CAAC;EACb,gBAAgB,EAHT,OAAO,CAGc,UAAU;CAAG"
+}
