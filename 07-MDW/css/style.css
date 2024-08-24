@@ -630,8 +630,8 @@ h1, h2, h3, h4, h5, h6, p, ul, body {
 .our-capabilities-header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 2fr 3fr 1fr;
-  grid-template-areas: "title text btn-link";
+  grid-template-columns: 2fr 2rem 3fr 2rem 1fr;
+  grid-template-areas: "title . text . btn-link";
   position: relative;
 }
 
@@ -1213,9 +1213,9 @@ h1, h2, h3, h4, h5, h6, p, ul, body {
   .our-capabilities-header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1rem 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "title title" "text btn-link";
+    grid-template-areas: "title title title" "text . btn-link";
     grid-row-gap: 20px;
     position: relative;
   }
@@ -1769,9 +1769,9 @@ h1, h2, h3, h4, h5, h6, p, ul, body {
   .our-capabilities-header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1rem 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "title title" "text btn-link";
+    grid-template-areas: "title title title" "text . btn-link";
     grid-row-gap: 20px;
     position: relative;
   }
