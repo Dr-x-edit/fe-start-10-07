@@ -2,9 +2,128 @@
 // @import "resets.scss"
 // @import "normalizez.scss"
 
-$main-color:  #fff
+$main-color: #fff
 $accent-color: #000
 $bg-color: #668E68
 
+@font-face
+    font-family: "Georgia"
+    src: url(../fonts/Georgia.ttf)
+    font-display: swap
+    font-style: normal
+
+.shadows-into-light
+    font-family: "Shadows Into Light", cursive
+    font-weight: 400
+    font-style: normal
+
+
+
+.main-text-color
+    color: $main-color !important
+
+
 .background-fill
     background-color: $bg-color !important
+
+.navbar-title
+    font-family: "Georgia"
+    font-weight: 400
+    font-size: 44px
+    color: $main-color !important
+
+
+.text-link
+    font-weight: 500
+    font-size: 18px
+    color: $main-color !important
+
+.first-section
+    background: url(../img/first_background.png) center/cover no-repeat
+    &-title
+        padding: 171px 0
+        font-weight: 400
+        font-size: 110px
+        color: $main-color !important
+
+.second-section
+    margin-bottom: 62px
+    &-cards
+    &-title
+        padding-top: 60px
+
+        font-size: 40px
+        font-weight: 400
+    &-text
+        margin-bottom: 39px !important
+
+    &-card
+        &-wrapper
+            width: 350px
+            height: 350px
+            border: 9px solid #81613B !important
+        &-1, &-2, &-3
+            height: 350px
+
+        &-1
+            background: url(../img/drinks-1.png) center/cover no-repeat
+        &-2
+            background: url(../img/cakes-1.png) center/cover no-repeat
+        &-3
+            background: url(../img/foods-1.png) center/cover no-repeat
+        &-title
+            font-family: "Georgia"
+            font-weight: 400
+            font-size: 26px
+
+    &-button
+        background-color: $bg-color !important
+
+.third-section
+    background: url(../img/second_background.png) center/cover no-repeat
+    padding: 138px 0 147px 0
+    &-title
+        font-weight: 400
+        font-size: 40px
+        color: $main-color !important
+    &-subtitle
+        margin-bottom: 32px !important
+    &-subtitle, &-text
+        font-weight: 500
+        font-size: 20px
+        color: $main-color !important
+    &-row-text
+        margin-bottom: 61px
+
+.fourth-section
+    background-color: rgba(129, 97, 59, 0.2)
+    padding-bottom: 80px
+    &-cards
+    &-title
+        padding-top: 60px
+
+        font-size: 40px
+        font-weight: 400
+        line-height: 35px
+    &-text
+        font-weight: 500
+        font-size: 16px
+        margin-bottom: 10px
+    &-title-wrapper
+        margin-bottom: 62px
+    &-text-wrapper
+        border: 1px solid $bg-color
+        padding: 20px
+
+footer
+    background: $accent-color
+    padding: 20px 0 85px 0
+
+.footer-button
+    width: 32px
+    height: 32px
+    background-color: $bg-color !important
+
+
+
+
