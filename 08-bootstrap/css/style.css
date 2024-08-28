@@ -42,7 +42,7 @@
   background: url(../img/first_background.png) center/cover no-repeat;
 }
 
-/* line 43, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 44, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .first-section-title {
   padding: 171px 0;
   font-weight: 400;
@@ -50,99 +50,105 @@
   color: #fff !important;
 }
 
-/* line 49, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 50, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .second-section {
   margin-bottom: 62px;
 }
 
-/* line 52, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 53, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .second-section-title {
   padding-top: 60px;
   font-size: 40px;
   font-weight: 400;
 }
 
-/* line 57, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 58, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .second-section-text {
   margin-bottom: 39px !important;
 }
 
-/* line 61, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 62, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .second-section-card-wrapper {
   width: 350px;
   height: 350px;
   border: 9px solid #81613B !important;
 }
 
-/* line 65, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 66, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .second-section-card-1, .second-section-card-2, .second-section-card-3 {
   height: 350px;
 }
 
-/* line 68, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 69, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .second-section-card-1 {
   background: url(../img/drinks-1.png) center/cover no-repeat;
 }
 
-/* line 70, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 71, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .second-section-card-2 {
   background: url(../img/cakes-1.png) center/cover no-repeat;
 }
 
-/* line 72, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 73, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .second-section-card-3 {
   background: url(../img/foods-1.png) center/cover no-repeat;
 }
 
-/* line 74, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 75, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .second-section-card-title {
   font-family: "Georgia";
   font-weight: 400;
   font-size: 26px;
 }
 
-/* line 79, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 80, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .second-section-button {
   background-color: #668E68 !important;
 }
 
-/* line 82, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 83, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .third-section {
   background: url(../img/second_background.png) center/cover no-repeat;
-  padding: 138px 0 147px 0;
 }
 
-/* line 85, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 86, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .third-section-title {
   font-weight: 400;
   font-size: 40px;
   color: #fff !important;
+  padding-top: 138px;
 }
 
-/* line 89, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 91, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .third-section-subtitle {
   margin-bottom: 32px !important;
 }
 
-/* line 91, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 93, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .third-section-subtitle, .third-section-text {
   font-weight: 500;
   font-size: 20px;
   color: #fff !important;
 }
 
-/* line 95, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 97, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .third-section-row-text {
   margin-bottom: 61px;
 }
 
-/* line 98, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 99, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+.third-section-button {
+  background-color: #668E68 !important;
+  margin-bottom: 147px;
+}
+
+/* line 103, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .fourth-section {
   background-color: rgba(129, 97, 59, 0.2);
   padding-bottom: 80px;
 }
 
-/* line 102, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 107, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .fourth-section-title {
   padding-top: 60px;
   font-size: 40px;
@@ -150,35 +156,125 @@
   line-height: 35px;
 }
 
-/* line 108, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 113, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .fourth-section-text {
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-/* line 112, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 117, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .fourth-section-title-wrapper {
   margin-bottom: 62px;
 }
 
-/* line 114, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 119, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .fourth-section-text-wrapper {
   border: 1px solid #668E68;
   padding: 20px;
 }
 
-/* line 118, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 123, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 footer {
   background: #000;
   padding: 20px 0 85px 0;
 }
 
-/* line 122, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+/* line 127, ../fe-start-10-07/08-bootstrap/sass/style.sass */
 .footer-button {
   width: 32px;
   height: 32px;
   background-color: #668E68 !important;
+}
+
+@media (min-width: 576px) {
+  /* line 133, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .first-section {
+    background: url(../img/first_background.png) center/cover no-repeat;
+  }
+  /* line 136, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .first-section-title {
+    padding: 171px 0;
+    font-weight: 400;
+    font-size: 110px;
+    color: #fff !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* line 143, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  footer {
+    text-align: center;
+    padding: 20px 0 20px 0;
+  }
+  /* line 146, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .footer-button {
+    position: static !important;
+    width: 32px;
+    height: 32px;
+    background-color: #668E68 !important;
+  }
+  /* line 152, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .footer-row {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+  /* line 156, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .first-section {
+    background: url(../img/first_background.png) center/cover no-repeat;
+  }
+  /* line 158, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .first-section-title {
+    padding: 141px 0;
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff !important;
+  }
+  /* line 163, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .third-section {
+    background: url(../img/second_background.png) center/cover no-repeat;
+  }
+  /* line 166, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .third-section-title {
+    font-weight: 400;
+    font-size: 40px;
+    color: #fff !important;
+    padding-top: 34px;
+  }
+  /* line 171, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .third-section-subtitle {
+    margin-bottom: 32px !important;
+  }
+  /* line 173, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .third-section-subtitle, .third-section-text {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff !important;
+  }
+  /* line 177, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .third-section-row-text {
+    margin-bottom: 61px;
+  }
+  /* line 179, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .third-section-button {
+    background-color: #668E68 !important;
+    margin-bottom: 42px;
+  }
+  /* line 182, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  footer {
+    text-align: center;
+    padding: 20px 0 20px 0;
+  }
+  /* line 185, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .footer-button {
+    position: static !important;
+    width: 32px;
+    height: 32px;
+    background-color: #668E68 !important;
+    margin-bottom: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

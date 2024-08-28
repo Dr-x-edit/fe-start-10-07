@@ -40,8 +40,9 @@ $bg-color: #668E68
 
 .first-section
     background: url(../img/first_background.png) center/cover no-repeat
+    // height: 70vh
     &-title
-        padding: 171px 0
+        padding: 171px 0   
         font-weight: 400
         font-size: 110px
         color: $main-color !important
@@ -81,11 +82,12 @@ $bg-color: #668E68
 
 .third-section
     background: url(../img/second_background.png) center/cover no-repeat
-    padding: 138px 0 147px 0
+    // padding: 138px 0 147px 0
     &-title
         font-weight: 400
         font-size: 40px
         color: $main-color !important
+        padding-top: 138px
     &-subtitle
         margin-bottom: 32px !important
     &-subtitle, &-text
@@ -94,6 +96,9 @@ $bg-color: #668E68
         color: $main-color !important
     &-row-text
         margin-bottom: 61px
+    &-button
+        background-color: $bg-color !important
+        margin-bottom: 147px
 
 .fourth-section
     background-color: rgba(129, 97, 59, 0.2)
@@ -124,6 +129,63 @@ footer
     height: 32px
     background-color: $bg-color !important
 
+@media (min-width: 576px)
+    .first-section
+        background: url(../img/first_background.png) center/cover no-repeat
+        // height: 70vh
+        &-title
+            padding: 171px 0   
+            font-weight: 400
+            font-size: 110px
+            color: $main-color !important
 
+@media (min-width: 576px) and (max-width: 767.98px)
+    footer
+        text-align: center
+        padding: 20px 0 20px 0
+    .footer-button
+        position: static !important
+        width: 32px
+        height: 32px
+        background-color: $bg-color !important
+        //  margin-bottom: 0 !important
+    .footer-row
+        justify-content: flex-end
 
+@media (min-width: 0px) and (max-width: 575.98px)
+    .first-section
+        background: url(../img/first_background.png) center/cover no-repeat
+        &-title
+            padding: 141px 0   
+            font-weight: 400
+            font-size: 50px
+            color: $main-color !important
+    .third-section
+        background: url(../img/second_background.png) center/cover no-repeat
+        // padding: 138px 0 147px 0
+        &-title
+            font-weight: 400
+            font-size: 40px
+            color: $main-color !important
+            padding-top: 34px
+        &-subtitle
+            margin-bottom: 32px !important
+        &-subtitle, &-text
+            font-weight: 500
+            font-size: 20px
+            color: $main-color !important
+        &-row-text
+            margin-bottom: 61px
+        &-button
+            background-color: $bg-color !important
+            margin-bottom: 42px
+    footer
+        text-align: center
+        padding: 20px 0 20px 0
+    .footer-button
+        position: static !important
+        width: 32px
+        height: 32px
+        background-color: $bg-color !important
+        margin-bottom: 0 !important
 

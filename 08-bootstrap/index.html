@@ -20,62 +20,52 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="container-fluid background-fill main-text-color">
+    <header class="container-fluid background-fill">
       <div class="container">
         <nav
           class="navbar navbar-expand-xl py-0 bg-body-tertiary background-fill"
           data-bs-theme="dark"
         >
-          <div class="container-fluid px-0 justify-content-center">
-            <div class="row w-100 align-items-center">
-              <div class="col-6 px-0">
-                <a class="navbar-brand navbar-title main-text-color" href="#"
-                  >DesignCafé</a
-                >
-              </div>
-              <div
-                class="col-6 px-0 main-text-color d-flex justify-content-end"
-              >
-                <button
-                  class="navbar-toggler border border-0"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav"
-                  aria-controls="navbarNav"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav w-100 justify-content-between">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active text-link"
-                        aria-current="page"
-                        href="#"
-                        >DesignCafé とは</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-link" href="#">メニュー</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-link" href="#">お問い合わせ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-link" href="#">お知らせ</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+          <div class="container-fluid">
+            <a class="navbar-brand navbar-title" href="#">DesignCafé</a>
+            <button
+              class="navbar-toggler border border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav column-gap-5">
+                <li class="nav-item">
+                  <a class="nav-link text-link" aria-current="page" href="#"
+                    >DesignCaféとは</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-link" href="#">メニュー</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-link" href="#">お問い合わせ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-link" href="#">お知らせ</a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
       </div>
     </header>
     <section class="container-fluid first-section">
-      <div class="container px-0">
+      <div class="container">
         <div class="row">
           <div class="col d-flex justify-content-center">
             <h1 class="text-center mb-0 first-section-title shadows-into-light">
@@ -87,13 +77,13 @@
     </section>
     <section class="container-fluid second-section">
       <div class="container px-0">
-        <div class="row w-100">
+        <div class="row">
           <div class="col-lg px-0 d-flex flex-column text-center">
             <h2 class="mb-0 second-section-title shadows-into-light">Menu</h2>
             <p class="mb-0 second-section-text">メニュー</p>
           </div>
         </div>
-        <div class="row w-100 second-section-cards">
+        <div class="row second-section-cards">
           <div class="col-xl-4 px-0 mb-5 d-flex justify-content-center">
             <div
               class="border rounded-circle overflow-hidden position-relative second-section-card-wrapper"
@@ -131,13 +121,13 @@
             </div>
           </div>
         </div>
-        <div class="row w-100 justify-content-center">
+        <div class="row justify-content-center">
           <div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-5 px-0 d-flex justify-content-center"
+            class="col-xl-4 col-lg-4 col-md-4 col-sm-6 px-0 d-flex justify-content-center"
           >
             <button
               type="button"
-              class="btn btn-success w-75 d-flex align-items-center justify-content-end rounded-pill second-section-button"
+              class="btn btn-success w-50 d-flex align-items-center justify-content-end rounded-pill second-section-button"
             >
               <span class="col-10">詳しく見る</span>
               <svg
@@ -160,7 +150,7 @@
     </section>
     <section class="container-fluid third-section">
       <div class="container px-0 d-flex flex-column align-items-center">
-        <div class="row w-100">
+        <div class="row">
           <div class="col text-center">
             <h3 class="third-section-title shadows-into-light mb-0">About</h3>
             <p class="third-section-subtitle">DesignCaféとは</p>
@@ -178,11 +168,11 @@
         </div>
         <div class="row w-100 justify-content-center">
           <div
-            class="col-xl-2 col-lg-3 col-md-4 col-sm-5 px-0 d-flex justify-content-center"
+            class="col-xl-4 col-lg-4 col-md-5 col-sm-6 px-0 d-flex justify-content-center"
           >
             <button
               type="button"
-              class="btn btn-success w-75 d-flex align-items-center justify-content-end rounded-pill second-section-button"
+              class="btn btn-success w-50 d-flex align-items-center justify-content-end rounded-pill third-section-button"
             >
               <span class="col-10">詳しく見る</span>
               <svg
@@ -204,17 +194,17 @@
       </div>
     </section>
     <section class="container-fluid fourth-section">
-      <div class="container px-0">
-        <div class="row w-100 fourth-section-title-wrapper">
+      <div class="container">
+        <div class="row fourth-section-title-wrapper">
           <div class="col-lg px-0 d-flex flex-column text-center">
             <h2 class="mb-0 fourth-section-title shadows-into-light">News</h2>
             <p class="mb-0 fourth-section-text">お知らせ</p>
           </div>
         </div>
-        <div class="row w-100 bg-light fourth-section-text-wrapper">
+        <div class="row bg-light fourth-section-text-wrapper">
           <div class="col-lg ps-2">
             <div class="row">
-              <div class="col-1 col-lg-1 col-md-2 col-sm-3 px-0">
+              <div class="col-xl-1 col-md-2 col-sm-3 px-0">
                 <p class="fourth-section-text">11/6（土）</p>
               </div>
               <div class="col-auto px-0">
@@ -224,7 +214,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-1 col-lg-1 col-md-2 col-sm-3 px-0">
+              <div class="col-xl-1 col-md-2 col-sm-3 px-0">
                 <p class="mb-0 fourth-section-text">10/29（土）</p>
               </div>
               <div class="col-auto px-0">
@@ -240,34 +230,35 @@
     <footer class="container-fluid position-relative">
       <div class="container text-white">
         <div class="row">
-          <div class="col-md-6 col-sm-12 text-md-start text-sm-center mb-3">
+          <div class="col-md-6 col-sm-12 text-md-start text-sm-center mb-2">
             東京都港区赤坂xx-xx <br />
             (03) 9999-9999 <br />
             contact@designcafe.com
           </div>
           <div class="col-md-6 col-sm-12 text-md-end text-sm-center">
-            (c) 2022 DesignCafé. All rights reserved.
-          </div>
-          <div class="row">
-            <div class="col">
-              <button
-                type="button"
-                class="btn btn-success position-absolute bottom-0 end-0 px-0 py-0 me-3 mb-3 d-flex justify-content-center align-items-center rounded-circle footer-button"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-triangle-fill"
-                  viewBox="0 0 16 16"
+            <div class="row justify-content-end footer-row">
+              <div class="col-11 px-0 col-sm-12 d-flex justify-content-center">
+                (c) 2022 DesignCafé. All rights reserved.
+
+                <button
+                  type="button"
+                  class="btn btn-success position-absolute bottom-0 end-0 px-0 py-0 ms-2 me-3 mb-3 d-flex justify-content-center align-items-center rounded-circle footer-button"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-triangle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
