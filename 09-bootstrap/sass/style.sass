@@ -1,0 +1,310 @@
+// ЗАГАЛЬНЕ
+// @import "resets.scss"
+// @import "normalizez.scss"
+
+$Fondini: #F4ECE8
+$Grigio_scuro: #3D3D3C
+$Arancio: #F39200
+$Grigio_Chiaro: #F2F2F2
+$Bianco: #FFFFFF
+
+
+
+
+
+.abhaya-libre 
+  font-family: "Abhaya Libre", serif !important
+  font-style: normal !important
+
+.noto-serif
+  font-family: "Noto Serif", serif
+  font-optical-sizing: auto
+  font-style: normal
+
+.poppins
+  font-family: "Poppins", sans-serif !important
+  font-style: normal !important
+
+.link-style
+  color: #3D3935 !important
+  font-size: 13px
+  font-weight: 500
+  &-700
+    color: #3D3935 !important
+    font-size: 13px
+    font-weight: 700
+
+
+
+.link-chevron
+  font-size: 13px
+
+.search-btn
+  font-size: 20px
+  
+.dropdown-menu li
+  position: relative
+
+.dropdown-menu .dropdown-submenu
+  display: none 
+  position: absolute 
+  left: 100% 
+  top: -1px  
+
+.dropdown-menu
+  left: auto
+
+.dropdown-menu > li:hover > .dropdown-submenu 
+  display: flex
+  flex-direction: column
+
+
+.dropdown-menu > li:hover > a
+  background-color: $Arancio   !important
+
+.first-section
+  background: linear-gradient(270.00deg, rgb(61, 61, 60),rgba(61, 61, 60, 0.2) 100%), url(../img/index_page/background.png) center/cover no-repeat
+  &-text-wrapper
+    padding-top: 310px
+  &-title
+    font-size: 60px
+    font-weight: 700
+    line-height: 103.5%
+    color: $Bianco
+    margin-bottom: 8px
+
+  &-text
+    font-size: 13px
+    font-weight: 500
+    line-height: 140%
+    letter-spacing: 0%
+    color: $Bianco
+    margin-bottom: 48px
+
+  &-card-title
+    font-size: 9px
+    font-weight: 600
+    line-height: 160%
+    letter-spacing: 1%
+    color: $Arancio
+
+  &-card-text
+    font-size: 18px
+    font-weight: 500
+    line-height: 140%
+    letter-spacing: 0%
+    color: $Grigio_scuro 
+
+.second-section
+  padding-top: 38px
+  padding-bottom: 81px
+  background-color: $Fondini 
+
+  &-title
+    font-size: 60px
+    font-weight: 700
+    line-height: 103.5%
+    color: $Grigio_scuro
+    margin-bottom: 8px
+  &-card
+    &-main
+      &-text
+        color: $Arancio !important
+      &-title
+        font-size: 40px
+        font-weight: 700
+        line-height: 114.3%
+        letter-spacing: 0%
+      &-autor
+        font-size: 13px
+        font-weight: 400
+        line-height: 150%
+        letter-spacing: 0%
+      &-autor > span
+        color: $Arancio
+      &-btn
+        border: 1.5px solid black
+        background-color: $Bianco
+        color: $Grigio_scuro
+    &-secondary
+      &-text
+        color: $Arancio !important
+      &-description
+        color: $Grigio_scuro !important
+      &-title
+        font-size: 18px
+        font-weight: 500
+        line-height: 140%
+        letter-spacing: 0%
+      &-autor
+        font-size: 9px
+        font-weight: 400
+        line-height: 160%
+      &-autor > span
+        color: $Arancio
+      &-btn
+        border: 1.5px solid black
+        background-color: $Bianco
+        color: $Grigio_scuro
+
+.third-section
+  background-color: $Bianco
+  padding: 90px
+  &-title-wrapper
+    margin-bottom: 91px
+  &-wrapper
+    background-color: $Fondini
+    padding: 86px 107px 111px
+  &-title
+    font-size: 24px
+    font-weight: 500
+    line-height: 136%
+  &-card-wrapper
+  &-card
+    width: 100%
+    height: 136px
+    margin-bottom: 68px
+    &-text
+      font-size: 13px
+      font-weight: 500
+      line-height: 140%
+
+.fourth-section
+  padding-top: 38px
+  padding-bottom: 81px
+  background-color: $Fondini
+  &-card
+    &-title
+      font-size: 30px
+      font-weight: 700
+      line-height: 120.5%
+      letter-spacing: 0%
+      margin-bottom: 67px
+ 
+.carousel-btn
+  width: 9%
+  height: 40px
+  top: 55%
+
+.carousel-inner .card
+  width: 196px
+  height: 192px
+  
+.sixth-section
+  background-color: $Fondini
+  padding: 80px 90px 88px
+  &-card
+    border-radius: 4px
+    &-left
+      padding: 80px 80px 90px 80px
+    &-right-title
+      font-size: 40px
+      font-weight: 700
+      line-height: 114.3%
+      color: $Bianco
+    &-right-text
+      font-size: 24px
+      font-weight: 500
+      line-height: 136%
+      color: $Bianco
+    &-right-first, &-right-second
+      padding: 49px 63px 57px 53px
+    &-right-first
+      border-top-right-radius: 4px
+      background-color: #059EB2
+    &-right-second
+      background-color: $Arancio
+      border-bottom-right-radius: 4px
+    &-img
+      margin-right: 60px
+      width: 124px
+      height: 132px
+      background-color: $Bianco
+    &-title
+      font-size: 60px
+      font-weight: 700
+      line-height: 103.5%
+    &-btn
+        border: 1.5px solid $Bianco
+        background-color: transparent !important
+        color: $Bianco !important
+
+.seventh-section-card-title
+  font-size: 60px
+  font-weight: 700
+  line-height: 103.5%
+.seventh-section-card-subtitle
+  font-size: 24px
+  font-weight: 500
+  line-height: 136%
+
+form  input
+  background-color: transparent !important
+  border: 1.5px solid black !important
+
+form label
+  font-size: 13px
+  font-weight: 500
+  line-height: 130.4% 
+
+form p
+  font-size: 9px
+  font-weight: 400
+  line-height: 160%
+
+.from-btn
+  border: 1.5px solid black
+  background-color: transparent !important
+  color: $Grigio_scuro
+
+.form-check-input:checked 
+  background-color: $Grigio_scuro !important
+
+.icon-style
+  font-size: 29px
+
+.title-list
+  font-size: 18px
+  font-weight: 500
+  line-height: 140%
+  letter-spacing: 0%
+
+.list
+  list-style-type: none
+  padding: 0
+  margin: 0
+  &-item
+    font-size: 13px
+    font-weight: 500
+    line-height: 130.4%
+    margin-bottom: 5px
+
+.link-panel
+  padding-bottom: 66px
+
+.form
+  &-wrapper
+    padding-top: 56px
+  &-title
+    font-size: 24px
+    font-weight: 500
+    line-height: 136%
+  &-subtitle
+    font-size: 13px
+    font-weight: 400
+    line-height: 150%
+
+.footer
+  &-title
+    font-size: 13px
+    font-weight: 500
+    line-height: 130.4%
+
+footer
+  background-color: $Grigio_Chiaro
+
+footer .text
+  font-size: 13px
+  font-weight: 400
+  line-height: 140%
+  letter-spacing: -1%
