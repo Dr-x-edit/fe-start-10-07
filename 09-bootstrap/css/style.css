@@ -1,52 +1,103 @@
+/* line 12, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.bgc-fondini {
+  background-color: #F4ECE8;
+}
+
 /* line 15, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.bgc-bianco {
+  background-color: #FFFFFF;
+}
+
+/* line 18, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.big-copy {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* line 24, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.h3 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 136%;
+}
+
+/* line 30, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.grigio-chiaro {
+  color: #b5b7c4;
+}
+
+/* line 33, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.grigio-scuro {
+  color: #3D3D3C;
+}
+
+/* line 36, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.arancio {
+  color: #F39200;
+}
+
+/* line 39, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.bottoni {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 130.4%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* line 52, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .abhaya-libre {
   font-family: "Abhaya Libre", serif !important;
   font-style: normal !important;
 }
 
-/* line 19, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 56, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .noto-serif {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
-/* line 24, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 61, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .poppins {
   font-family: "Poppins", sans-serif !important;
   font-style: normal !important;
 }
 
-/* line 28, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 65, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .link-style {
   color: #3D3935 !important;
   font-size: 13px;
   font-weight: 500;
 }
 
-/* line 32, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 69, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .link-style-700 {
   color: #3D3935 !important;
   font-size: 13px;
   font-weight: 700;
 }
 
-/* line 39, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 76, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .link-chevron {
   font-size: 13px;
 }
 
-/* line 42, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 79, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .search-btn {
   font-size: 20px;
 }
 
-/* line 45, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 82, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .dropdown-menu li {
   position: relative;
 }
 
-/* line 48, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 85, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .dropdown-menu .dropdown-submenu {
   display: none;
   position: absolute;
@@ -54,33 +105,33 @@
   top: -1px;
 }
 
-/* line 54, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 91, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .dropdown-menu {
   left: auto;
 }
 
-/* line 57, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 94, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .dropdown-menu > li:hover > .dropdown-submenu {
   display: flex;
   flex-direction: column;
 }
 
-/* line 62, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 99, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .dropdown-menu > li:hover > a {
   background-color: #F39200 !important;
 }
 
-/* line 65, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 102, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section {
   background: linear-gradient(270deg, #3d3d3c, rgba(61, 61, 60, 0.2) 100%), url(../img/index_page/background.png) center/cover no-repeat;
 }
 
-/* line 67, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 104, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section-text-wrapper {
   padding-top: 310px;
 }
 
-/* line 69, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 106, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section-title {
   font-size: 60px;
   font-weight: 700;
@@ -89,7 +140,7 @@
   margin-bottom: 8px;
 }
 
-/* line 76, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 113, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section-text {
   font-size: 13px;
   font-weight: 500;
@@ -99,7 +150,7 @@
   margin-bottom: 48px;
 }
 
-/* line 84, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 121, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section-card-title {
   font-size: 9px;
   font-weight: 600;
@@ -108,7 +159,7 @@
   color: #F39200;
 }
 
-/* line 91, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 128, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section-card-text {
   font-size: 18px;
   font-weight: 500;
@@ -117,14 +168,14 @@
   color: #3D3D3C;
 }
 
-/* line 98, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 135, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section {
   padding-top: 38px;
   padding-bottom: 81px;
   background-color: #F4ECE8;
 }
 
-/* line 103, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 140, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-title {
   font-size: 60px;
   font-weight: 700;
@@ -133,12 +184,12 @@
   margin-bottom: 8px;
 }
 
-/* line 111, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 148, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-main-text {
   color: #F39200 !important;
 }
 
-/* line 113, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 150, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-main-title {
   font-size: 40px;
   font-weight: 700;
@@ -146,7 +197,7 @@
   letter-spacing: 0%;
 }
 
-/* line 118, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 155, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-main-autor {
   font-size: 13px;
   font-weight: 400;
@@ -154,29 +205,29 @@
   letter-spacing: 0%;
 }
 
-/* line 123, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 160, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-main-autor > span {
   color: #F39200;
 }
 
-/* line 125, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 162, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-main-btn {
   border: 1.5px solid black;
   background-color: #FFFFFF;
   color: #3D3D3C;
 }
 
-/* line 130, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 167, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-text {
   color: #F39200 !important;
 }
 
-/* line 132, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 169, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-description {
   color: #3D3D3C !important;
 }
 
-/* line 134, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 171, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-title {
   font-size: 18px;
   font-weight: 500;
@@ -184,71 +235,71 @@
   letter-spacing: 0%;
 }
 
-/* line 139, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 176, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-autor {
   font-size: 9px;
   font-weight: 400;
   line-height: 160%;
 }
 
-/* line 143, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 180, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-autor > span {
   color: #F39200;
 }
 
-/* line 145, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 182, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-btn {
   border: 1.5px solid black;
   background-color: #FFFFFF;
   color: #3D3D3C;
 }
 
-/* line 150, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 187, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section {
   background-color: #FFFFFF;
   padding: 90px;
 }
 
-/* line 153, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 190, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section-title-wrapper {
   margin-bottom: 91px;
 }
 
-/* line 155, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 192, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section-wrapper {
   background-color: #F4ECE8;
   padding: 86px 107px 111px;
 }
 
-/* line 158, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 195, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section-title {
   font-size: 24px;
   font-weight: 500;
   line-height: 136%;
 }
 
-/* line 163, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 200, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section-card {
   width: 100%;
   height: 136px;
   margin-bottom: 68px;
 }
 
-/* line 167, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 204, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section-card-text {
   font-size: 13px;
   font-weight: 500;
   line-height: 140%;
 }
 
-/* line 172, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 209, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .fourth-section {
   padding-top: 38px;
   padding-bottom: 81px;
   background-color: #F4ECE8;
 }
 
-/* line 177, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 214, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .fourth-section-card-title {
   font-size: 30px;
   font-weight: 700;
@@ -257,36 +308,36 @@
   margin-bottom: 67px;
 }
 
-/* line 184, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 221, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .carousel-btn {
   width: 9%;
   height: 40px;
   top: 55%;
 }
 
-/* line 189, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 226, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .carousel-inner .card {
   width: 196px;
   height: 192px;
 }
 
-/* line 193, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 230, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section {
   background-color: #F4ECE8;
   padding: 80px 90px 88px;
 }
 
-/* line 196, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 233, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card {
   border-radius: 4px;
 }
 
-/* line 198, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 235, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-left {
   padding: 80px 80px 90px 80px;
 }
 
-/* line 200, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 237, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-right-title {
   font-size: 40px;
   font-weight: 700;
@@ -294,7 +345,7 @@
   color: #FFFFFF;
 }
 
-/* line 205, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 242, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-right-text {
   font-size: 24px;
   font-weight: 500;
@@ -302,24 +353,24 @@
   color: #FFFFFF;
 }
 
-/* line 210, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 247, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-right-first, .sixth-section-card-right-second {
   padding: 49px 63px 57px 53px;
 }
 
-/* line 212, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 249, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-right-first {
   border-top-right-radius: 4px;
   background-color: #059EB2;
 }
 
-/* line 215, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 252, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-right-second {
   background-color: #F39200;
   border-bottom-right-radius: 4px;
 }
 
-/* line 218, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 255, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-img {
   margin-right: 60px;
   width: 124px;
@@ -327,72 +378,72 @@
   background-color: #FFFFFF;
 }
 
-/* line 223, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 260, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 103.5%;
 }
 
-/* line 227, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 264, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-btn {
   border: 1.5px solid #FFFFFF;
   background-color: transparent !important;
   color: #FFFFFF !important;
 }
 
-/* line 232, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 269, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .seventh-section-card-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 103.5%;
 }
 
-/* line 236, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 273, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .seventh-section-card-subtitle {
   font-size: 24px;
   font-weight: 500;
   line-height: 136%;
 }
 
-/* line 241, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 278, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 form input {
   background-color: transparent !important;
   border: 1.5px solid black !important;
 }
 
-/* line 245, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 282, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 form label {
   font-size: 13px;
   font-weight: 500;
   line-height: 130.4%;
 }
 
-/* line 250, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 287, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 form p {
   font-size: 9px;
   font-weight: 400;
   line-height: 160%;
 }
 
-/* line 255, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 292, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .from-btn {
   border: 1.5px solid black;
   background-color: transparent !important;
   color: #3D3D3C;
 }
 
-/* line 260, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 297, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .form-check-input:checked {
   background-color: #3D3D3C !important;
 }
 
-/* line 263, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 300, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .icon-style {
   font-size: 29px;
 }
 
-/* line 266, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 303, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .title-list {
   font-size: 18px;
   font-weight: 500;
@@ -400,14 +451,14 @@ form p {
   letter-spacing: 0%;
 }
 
-/* line 272, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 309, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 276, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 313, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .list-item {
   font-size: 13px;
   font-weight: 500;
@@ -415,43 +466,43 @@ form p {
   margin-bottom: 5px;
 }
 
-/* line 282, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 319, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .link-panel {
   padding-bottom: 66px;
 }
 
-/* line 286, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 323, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .form-wrapper {
   padding-top: 56px;
 }
 
-/* line 288, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 325, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .form-title {
   font-size: 24px;
   font-weight: 500;
   line-height: 136%;
 }
 
-/* line 292, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 329, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .form-subtitle {
   font-size: 13px;
   font-weight: 400;
   line-height: 150%;
 }
 
-/* line 298, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 335, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .footer-title {
   font-size: 13px;
   font-weight: 500;
   line-height: 130.4%;
 }
 
-/* line 303, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 340, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 footer {
-  background-color: #F2F2F2;
+  background-color: #b5b7c4;
 }
 
-/* line 306, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 343, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 footer .text {
   font-size: 13px;
   font-weight: 400;
