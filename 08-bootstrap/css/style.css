@@ -199,75 +199,79 @@ footer {
     font-size: 110px;
     color: #fff !important;
   }
+  /* line 141, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  .footer-row {
+    justify-content: flex-end !important;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* line 143, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 146, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   footer {
     text-align: center;
     padding: 20px 0 20px 0;
   }
-  /* line 146, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 149, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   .footer-button {
     position: static !important;
     width: 32px;
     height: 32px;
     background-color: #668E68 !important;
   }
-  /* line 152, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 155, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   .footer-row {
-    justify-content: flex-end;
+    justify-content: center !important;
   }
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
-  /* line 156, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 159, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   .first-section {
     background: url(../img/first_background.png) center/cover no-repeat;
   }
-  /* line 158, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 161, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   .first-section-title {
     padding: 141px 0;
     font-weight: 400;
     font-size: 50px;
     color: #fff !important;
   }
-  /* line 163, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 166, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   .third-section {
     background: url(../img/second_background.png) center/cover no-repeat;
   }
-  /* line 166, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 169, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   .third-section-title {
     font-weight: 400;
     font-size: 40px;
     color: #fff !important;
     padding-top: 34px;
   }
-  /* line 171, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 174, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   .third-section-subtitle {
     margin-bottom: 32px !important;
   }
-  /* line 173, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 176, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   .third-section-subtitle, .third-section-text {
     font-weight: 500;
     font-size: 20px;
     color: #fff !important;
   }
-  /* line 177, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 180, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   .third-section-row-text {
     margin-bottom: 61px;
   }
-  /* line 179, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 182, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   .third-section-button {
     background-color: #668E68 !important;
     margin-bottom: 42px;
   }
-  /* line 182, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 185, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   footer {
     text-align: center;
     padding: 20px 0 20px 0;
   }
-  /* line 185, ../fe-start-10-07/08-bootstrap/sass/style.sass */
+  /* line 188, ../fe-start-10-07/08-bootstrap/sass/style.sass */
   .footer-button {
     position: static !important;
     width: 32px;
