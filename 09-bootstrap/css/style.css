@@ -1,14 +1,20 @@
-/* line 12, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 11, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.btn-primary:hover {
+  background-color: #F39200;
+  border-color: #F39200;
+}
+
+/* line 16, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .bgc-fondini {
   background-color: #F4ECE8;
 }
 
-/* line 15, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 19, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .bgc-bianco {
   background-color: #FFFFFF;
 }
 
-/* line 18, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 22, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .big-copy {
   font-family: Poppins;
   font-size: 18px;
@@ -16,7 +22,7 @@
   line-height: 140%;
 }
 
-/* line 24, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 28, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .h3 {
   font-family: Poppins;
   font-size: 24px;
@@ -24,22 +30,42 @@
   line-height: 136%;
 }
 
-/* line 30, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 34, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.h2 {
+  color: #3d3d3c;
+  font-family: Abhaya Libre;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 114.3%;
+  letter-spacing: 0%;
+}
+
+/* line 42, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.dida {
+  color: #3d3d3c;
+  font-family: Noto Serif;
+  font-style: italic;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* line 50, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .grigio-chiaro {
   color: #b5b7c4;
 }
 
-/* line 33, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 53, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .grigio-scuro {
   color: #3D3D3C;
 }
 
-/* line 36, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 56, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .arancio {
   color: #F39200;
 }
 
-/* line 39, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 59, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .bottoni {
   font-family: Poppins;
   font-size: 13px;
@@ -49,55 +75,96 @@
   text-align: left;
 }
 
-/* line 52, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 66, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.bottoni-small {
+  font-family: Poppins;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 1%;
+}
+
+/* line 73, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.copy-caps {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 130.4%;
+  letter-spacing: 0%;
+}
+
+/* line 80, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.none-text-decoration {
+  text-decoration: none;
+}
+
+/* line 83, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.body-copy {
+  color: #3d3d3c;
+  font-family: Noto Serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+/* line 91, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+.body-copy-sans {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* line 101, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .abhaya-libre {
   font-family: "Abhaya Libre", serif !important;
   font-style: normal !important;
 }
 
-/* line 56, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 105, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .noto-serif {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
-/* line 61, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 110, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .poppins {
   font-family: "Poppins", sans-serif !important;
   font-style: normal !important;
 }
 
-/* line 65, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 114, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .link-style {
   color: #3D3935 !important;
   font-size: 13px;
   font-weight: 500;
 }
 
-/* line 69, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 118, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .link-style-700 {
   color: #3D3935 !important;
   font-size: 13px;
   font-weight: 700;
 }
 
-/* line 76, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 125, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .link-chevron {
   font-size: 13px;
 }
 
-/* line 79, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 128, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .search-btn {
   font-size: 20px;
 }
 
-/* line 82, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 131, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .dropdown-menu li {
   position: relative;
 }
 
-/* line 85, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 134, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .dropdown-menu .dropdown-submenu {
   display: none;
   position: absolute;
@@ -105,33 +172,33 @@
   top: -1px;
 }
 
-/* line 91, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 140, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .dropdown-menu {
   left: auto;
 }
 
-/* line 94, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 143, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .dropdown-menu > li:hover > .dropdown-submenu {
   display: flex;
   flex-direction: column;
 }
 
-/* line 99, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 148, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .dropdown-menu > li:hover > a {
   background-color: #F39200 !important;
 }
 
-/* line 102, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 151, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section {
   background: linear-gradient(270deg, #3d3d3c, rgba(61, 61, 60, 0.2) 100%), url(../img/index_page/background.png) center/cover no-repeat;
 }
 
-/* line 104, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 153, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section-text-wrapper {
   padding-top: 310px;
 }
 
-/* line 106, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 155, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section-title {
   font-size: 60px;
   font-weight: 700;
@@ -140,7 +207,7 @@
   margin-bottom: 8px;
 }
 
-/* line 113, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 162, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section-text {
   font-size: 13px;
   font-weight: 500;
@@ -150,7 +217,7 @@
   margin-bottom: 48px;
 }
 
-/* line 121, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 170, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section-card-title {
   font-size: 9px;
   font-weight: 600;
@@ -159,7 +226,7 @@
   color: #F39200;
 }
 
-/* line 128, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 177, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .first-section-card-text {
   font-size: 18px;
   font-weight: 500;
@@ -168,14 +235,14 @@
   color: #3D3D3C;
 }
 
-/* line 135, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 184, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section {
   padding-top: 38px;
   padding-bottom: 81px;
   background-color: #F4ECE8;
 }
 
-/* line 140, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 189, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-title {
   font-size: 60px;
   font-weight: 700;
@@ -184,12 +251,12 @@
   margin-bottom: 8px;
 }
 
-/* line 148, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 197, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-main-text {
   color: #F39200 !important;
 }
 
-/* line 150, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 199, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-main-title {
   font-size: 40px;
   font-weight: 700;
@@ -197,7 +264,7 @@
   letter-spacing: 0%;
 }
 
-/* line 155, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 204, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-main-autor {
   font-size: 13px;
   font-weight: 400;
@@ -205,29 +272,29 @@
   letter-spacing: 0%;
 }
 
-/* line 160, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 209, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-main-autor > span {
   color: #F39200;
 }
 
-/* line 162, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 211, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-main-btn {
   border: 1.5px solid black;
   background-color: #FFFFFF;
   color: #3D3D3C;
 }
 
-/* line 167, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 216, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-text {
   color: #F39200 !important;
 }
 
-/* line 169, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 218, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-description {
   color: #3D3D3C !important;
 }
 
-/* line 171, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 220, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-title {
   font-size: 18px;
   font-weight: 500;
@@ -235,71 +302,71 @@
   letter-spacing: 0%;
 }
 
-/* line 176, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 225, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-autor {
   font-size: 9px;
   font-weight: 400;
   line-height: 160%;
 }
 
-/* line 180, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 229, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-autor > span {
   color: #F39200;
 }
 
-/* line 182, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 231, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .second-section-card-secondary-btn {
   border: 1.5px solid black;
   background-color: #FFFFFF;
   color: #3D3D3C;
 }
 
-/* line 187, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 236, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section {
   background-color: #FFFFFF;
   padding: 90px;
 }
 
-/* line 190, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 239, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section-title-wrapper {
   margin-bottom: 91px;
 }
 
-/* line 192, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 241, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section-wrapper {
   background-color: #F4ECE8;
   padding: 86px 107px 111px;
 }
 
-/* line 195, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 244, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section-title {
   font-size: 24px;
   font-weight: 500;
   line-height: 136%;
 }
 
-/* line 200, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 249, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section-card {
   width: 100%;
   height: 136px;
   margin-bottom: 68px;
 }
 
-/* line 204, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 253, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .third-section-card-text {
   font-size: 13px;
   font-weight: 500;
   line-height: 140%;
 }
 
-/* line 209, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 258, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .fourth-section {
   padding-top: 38px;
   padding-bottom: 81px;
   background-color: #F4ECE8;
 }
 
-/* line 214, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 263, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .fourth-section-card-title {
   font-size: 30px;
   font-weight: 700;
@@ -308,36 +375,36 @@
   margin-bottom: 67px;
 }
 
-/* line 221, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 270, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .carousel-btn {
   width: 9%;
   height: 40px;
   top: 55%;
 }
 
-/* line 226, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 275, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .carousel-inner .card {
   width: 196px;
   height: 192px;
 }
 
-/* line 230, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 279, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section {
   background-color: #F4ECE8;
   padding: 80px 90px 88px;
 }
 
-/* line 233, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 282, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card {
   border-radius: 4px;
 }
 
-/* line 235, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 284, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-left {
   padding: 80px 80px 90px 80px;
 }
 
-/* line 237, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 286, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-right-title {
   font-size: 40px;
   font-weight: 700;
@@ -345,7 +412,7 @@
   color: #FFFFFF;
 }
 
-/* line 242, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 291, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-right-text {
   font-size: 24px;
   font-weight: 500;
@@ -353,24 +420,24 @@
   color: #FFFFFF;
 }
 
-/* line 247, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 296, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-right-first, .sixth-section-card-right-second {
   padding: 49px 63px 57px 53px;
 }
 
-/* line 249, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 298, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-right-first {
   border-top-right-radius: 4px;
   background-color: #059EB2;
 }
 
-/* line 252, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 301, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-right-second {
   background-color: #F39200;
   border-bottom-right-radius: 4px;
 }
 
-/* line 255, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 304, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-img {
   margin-right: 60px;
   width: 124px;
@@ -378,72 +445,72 @@
   background-color: #FFFFFF;
 }
 
-/* line 260, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 309, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 103.5%;
 }
 
-/* line 264, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 313, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .sixth-section-card-btn {
   border: 1.5px solid #FFFFFF;
   background-color: transparent !important;
   color: #FFFFFF !important;
 }
 
-/* line 269, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 318, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .seventh-section-card-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 103.5%;
 }
 
-/* line 273, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 322, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .seventh-section-card-subtitle {
   font-size: 24px;
   font-weight: 500;
   line-height: 136%;
 }
 
-/* line 278, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 327, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 form input {
   background-color: transparent !important;
   border: 1.5px solid black !important;
 }
 
-/* line 282, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 331, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 form label {
   font-size: 13px;
   font-weight: 500;
   line-height: 130.4%;
 }
 
-/* line 287, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 336, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 form p {
   font-size: 9px;
   font-weight: 400;
   line-height: 160%;
 }
 
-/* line 292, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 341, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .from-btn {
   border: 1.5px solid black;
   background-color: transparent !important;
   color: #3D3D3C;
 }
 
-/* line 297, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 346, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .form-check-input:checked {
   background-color: #3D3D3C !important;
 }
 
-/* line 300, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 349, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .icon-style {
   font-size: 29px;
 }
 
-/* line 303, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 352, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .title-list {
   font-size: 18px;
   font-weight: 500;
@@ -451,14 +518,14 @@ form p {
   letter-spacing: 0%;
 }
 
-/* line 309, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 358, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 313, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 362, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .list-item {
   font-size: 13px;
   font-weight: 500;
@@ -466,43 +533,43 @@ form p {
   margin-bottom: 5px;
 }
 
-/* line 319, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 368, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .link-panel {
   padding-bottom: 66px;
 }
 
-/* line 323, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 372, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .form-wrapper {
   padding-top: 56px;
 }
 
-/* line 325, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 374, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .form-title {
   font-size: 24px;
   font-weight: 500;
   line-height: 136%;
 }
 
-/* line 329, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 378, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .form-subtitle {
   font-size: 13px;
   font-weight: 400;
   line-height: 150%;
 }
 
-/* line 335, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 384, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 .footer-title {
   font-size: 13px;
   font-weight: 500;
   line-height: 130.4%;
 }
 
-/* line 340, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 389, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 footer {
   background-color: #b5b7c4;
 }
 
-/* line 343, ../fe-start-10-07/09-bootstrap/sass/style.sass */
+/* line 392, ../fe-start-10-07/09-bootstrap/sass/style.sass */
 footer .text {
   font-size: 13px;
   font-weight: 400;
